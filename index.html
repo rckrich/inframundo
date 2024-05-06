@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<title>Inframundo Digital Art Gallery</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="RCK Games" />
+    <meta name="description" content="Inframundo Digital Art Gallery es un espacio virtual dedicado a exhibir y ofrecer arte digital de vanguardia.">
+
+    <link rel="icon" href="Inframundo-Icon.png">
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@UMGbar" />
+    <meta name="twitter:title" content="Inframundo Digital Art Gallery" />
+    <meta name="twitter:description" content="Inframundo Digital Art Gallery es un espacio virtual dedicado a exhibir y ofrecer arte digital de vanguardia." />
+    <meta name="twitter:image" content="CAMBIAR -> https://unicornmotorcyclegang.io/images/images-UMG/UMG-Image-Socials.png" />
+
+    <meta property="og:title" content="Inframundo Digital Art Gallery" />
+    <meta property="og:description" content="Inframundo Digital Art Gallery es un espacio virtual dedicado a exhibir y ofrecer arte digital de vanguardia." />
+    <meta property="og:type" content="website" />  
+    <meta property="og:url" content="https://inframundo.io" />
+    <meta property="og:image" content="CAMBIAR -> https://unicornmotorcyclegang.io/images/images-UMG/UMG-Image-Socials.png" />
+
+
+	<!-- Stylesheets
+	============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom-glitch.css" type="text/css" />
+
+	<!-- Floating -->
+	<style>
+		.floating-orb {
+		  animation: float 3s ease-in-out infinite;
+		}
+	
+		@keyframes float {
+		  0% {
+			transform: translateY(0);
+		  }
+		  50% {
+			transform: translateY(-15px);
+		  }
+		  100% {
+			transform: translateY(0);
+		  }
+		}
+	</style>
+	
+	<!-- Orb -->
+	<style>
+        .light-orb {
+			width: 100px;
+			height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 214, 214, 0), rgba(255, 255, 255, 0));
+            box-shadow: 0 0 100px rgb(255, 255, 255);
+            animation: brightness 2s ease-in-out infinite;  /*, float-orb 3s ease-in-out infinite;*/
+        }
+
+        @keyframes brightness {
+            0% {
+                box-shadow: 0 0 100px rgb(255, 0, 0);
+                opacity: 1;
+            }
+            50% {
+                box-shadow: 0px 0px 30px rgb(255, 255, 255);
+                opacity: 1;
+            }
+			100% {
+                box-shadow: 0 0 100px rgb(255, 0, 0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes float-orb {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+    </style>
+	
+	<!-- Fire -->
+	<style>
+        .flame {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50% 50% 50% 50%;
+            background: radial-gradient(circle at bottom, #ffffff, #ffffff84, #ff3c003d, transparent);
+            animation: flicker 1.5s infinite ease-in-out, rise 3s infinite ease-in-out;
+            opacity: 0.8;
+        }
+
+        .flame:nth-child(1) {
+            width: 60%;
+            height: 60%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .flame:nth-child(2) {
+            width: 70%;
+            height: 70%;
+            left: 15%;
+            animation-delay: 0.3s;
+        }
+
+        .flame:nth-child(3) {
+            width: 80%;
+            height: 80%;
+            left: 10%;
+            animation-delay: 0.6s;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(0px) scale(1.5);
+            }
+            100% {
+                transform: translateY(0) scale(1);
+            }
+        }
+    </style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+	<!-- AQUI agregar el tag de Google Analytics -->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics end-->
+	
+</head>
+
+
+<body class="stretched" style="background-color: black;">
+
+
+	<!-- The Main Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix" style="background-color: black;">
+
+
+		<!-- Site Content
+		============================================= -->
+		<section id="content" style="background-color: rgb(0, 0, 0);">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div  style="margin: -85px;">
+						<img style="width: 100%; height: 100%; position: relative; top: 0; left: 0;" src="images/images-Inframundo/Portal_wide.jpg">					
+						<!--<img class="floating-orb" style="width: 100%; position: absolute; top: 0px; left: 0;" src="images/images-Inframundo/Portal_raro.png" alt="Bar Entrance">	-->				
+						<!--<div class="light-orb floating-orb" style="width: 5vw; height: 5vw; position: absolute; top: 47.5%; left: 46.5%;"></div>	-->
+						<div class="fire-container" style="width: 6svw; height: 6vw; position: absolute; top: 46%; left: 47%;">
+							<div class="flame"></div>
+							<div class="flame"></div>
+							<div class="flame"></div>
+						</div>	
+					</div>
+
+				</div>
+			</div>
+		</section><!-- Site Content end -->
+
+
+		<section id="content" style="background-color: rgb(0, 0, 0);">
+			<div class="content-wrap">
+				<div class="container">			
+					<!--
+					<div style="border: 3px dashed #1c87c900; position: absolute; width: 45%; top: 20%; left: 38%;">
+
+						<button id="SpeechBubble" onclick="clickMeEvent(jjj)" style="z-index: 1; visibility: hidden; position: absolute; max-width: 60%; top: -5vw; left: -15vw; background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0);">
+							<img src="images/images-UMG/SpeechBubble-LeftTalk.png" alt="Speech Bubble">
+							<span class="rckEntranceGuardFontSize" id="jjj" style="border: 3px dashed #1c87c900; position: absolute; padding-left: 10%; padding-right: 10%; padding-top: 5%; top: 0px; left: 0px; text-align: left; flex-wrap: wrap; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">...</span>
+						</button>
+
+						<button id="OpenSpeechBubble" onclick="clickMeEvent(this.style.visibility = 'hidden', SpeechBubble.style.visibility = 'visible')" style="z-index: 1; position: absolute; max-width: 20%; top: 10%; left: 0%; background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); ">
+							<img style="position: relative;" src="images/images-UMG/SpeechBubble-LeftTalk.png" alt="Speech Bubble">
+							<span style="border: 3px dashed #1c87c900; position: absolute; bottom: 25%; left: 30%; text-align: center; font-size:2vw;">...</span>
+						</button>
+
+						<img style="position: relative; max-width: 60%;" src="images/images-UMG/Garrotero_1024.png" alt="Bar Entrance Guard">
+					</div>
+					-->
+
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+
+					<div style="margin: auto;">
+						<div class="col-sm-4 center" style="margin: auto; background-color: rgb(127, 255, 212); object-fit:cover; height:100%; width:100%; max-width: 500px; border-radius: 10px;">
+							<p class="col-sm">
+								<h2 style="color: rgb(0, 0, 0); font-size: x-large; font-weight: bold;"><br> Are you of legal age?</h2>
+							</p>
+							<a href="https://unicornmotorcyclegang.io/main" class="button button-border button-rounded button-fill fill-from-right button-black">
+								<span>Yes</span>
+							</a>
+							<a href="#modalCannotEnter" data-lightbox="inline" class="button button-border button-rounded button-fill fill-from-right button-black">
+								<span>No</span>
+							</a>
+							<br>
+							<br>
+						</div>
+					</div>
+
+
+					<br>
+					<br>
+
+
+					<!--Audio Play Pause-->
+					<div style="position: fixed; background-color: rgba(51, 51, 51, 0); left: 15px; top:15px;">
+						
+						<!--
+						<audio loop id="myAudioPlayer">
+							<source src="audio/Night Club - Main Version.mp3" type="audio/mp3">
+						  Your browser does not support the audio element.
+						</audio>
+
+						<button id="btnPlayPauseMusicRCK" onclick="playPauseAudio()" class="gradient-purple-blue" style="display: block; border: none; padding: 10px; text-align: center; display: inline-block; margin: 5px 5px; cursor: pointer; border-radius: 50%; width: 100%; height: 100%;">
+							<img id="imagePlayPauseMusicRCK" style="max-width: 15px; max-height: 15px;" src="images/images-UMG/IconPlay.png">
+						</button>
+						-->
+
+					</div><!--Audio Play Pause end-->
+
+
+					<!-- Modal Cannot Enter 
+					============================================= -->
+					<div class="modal1 mfp-hide" id="modalCannotEnter">
+						<div class="block mx-auto" style="background-image: url('images/images-UMG/Modal-ComingSoon-BG-2.png'); 
+							background-repeat: no-repeat; background-size: cover; max-width: 400px;">
+							<div class="feature-box fbox-center fbox-effect fbox-lg border-bottom-0 mb-0" style="padding: 35px;">
+								<div class="fbox-content">
+									<h3 style="color: white; font-size: x-large;">Sorry<span class="subtitle" style="color: white; font-size: medium;">You cannot enter. You need to be of legal age.</span></h3>
+								</div>
+							</div>
+							<div class="section center m-0" style="padding: 10px; background-color:azure">
+								<a class="button button-border button-rounded button-fill button-black button-small" onClick="$.magnificPopup.close();"><span>Exit</span></a>
+							</div>
+						</div>
+					</div><!-- Modal Cannot Enter end -->
+				
+				</div>
+			</div>
+		</section><!-- Site Content end -->
+
+		
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container">
+		
+				<!-- Add something cool later, maybe twitter preview posts -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container">
+					<div class="text-center">
+						<div class="text-center">
+							<a href="https://discord.gg/6mHdurd4UX" class="social-icon inline-block si-borderless mb-0 si-yahoo" target="_blank" rel="noopener noreferrer">
+								<i class="icon-discord"></i>
+								<i class="icon-discord"></i>
+							</a>
+
+							<a href="https://twitter.com/UMGbar" class="social-icon inline-block si-borderless mb-0 si-twitter" target="_blank" rel="noopener noreferrer">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+						</div>
+
+						<p>
+							Unicorn Motorcycle Gang
+							<br>
+							Copyrights &copy; 2022 All Rights Reserved
+						</p>
+
+						<img src="images/images-UMG/UMG-Logo-White.png" alt="UMG Logo" class="mb-4" style="max-width: 120px;">						
+						
+						<br>
+						<br>
+
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+	</div>
+
+
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<!-- Custom Scripts
+	============================================= -->
+	<!--Dialogos de Guardia-->
+	<script type="application/javascript">	
+		function clickMeEvent(obj) 
+		{
+			if (obj.innerHTML == "...") 
+			{
+				obj.innerHTML = "Stop right there";
+				return;
+			}
+			if (obj.innerHTML == "Stop right there") 
+			{
+				obj.innerHTML = "You can't enter unless you are old enough";  
+				return; 
+			}
+			if (obj.innerHTML == "You can't enter unless you are old enough") 
+			{
+				obj.innerHTML = "Answer the question below to gain access";  
+				return; 
+			}
+			if (obj.innerHTML == "Answer the question below to gain access") 
+			{
+				obj.innerHTML = "We are serious";  
+				return;
+			}
+			if (obj.innerHTML == "We are serious") 
+			{
+				obj.innerHTML = "This project is targeted at young adults";  
+				return; 
+			}
+			if (obj.innerHTML == "This project is targeted at young adults") 
+			{
+				obj.innerHTML = "You better not lie";  
+				return;	
+			}
+			if (obj.innerHTML == "You better not lie") 
+			{
+				obj.innerHTML = "...";  
+				//obj.style.display = "none";
+				document.getElementById("SpeechBubble").style.visibility = "hidden";
+				document.getElementById("OpenSpeechBubble").style.visibility = "visible";
+
+				document.getElementById("SpeechBubbleMobile").style.visibility = "hidden";
+				document.getElementById("OpenSpeechBubbleMobile").style.visibility = "visible";
+
+				return;
+			}
+		}
+	</script><!--Dialogos de Guardia end-->
+
+	<!--Muestra Dialogos de Guardia en Moviles-->
+	<script>
+		function showOnMobile()	// Se llama en <body> con onload="showOnMobile()" ahorita no se esta usando
+		{
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+			{
+				document.getElementById("SpeechBubbleMobile").style.display = "block";
+				document.getElementById("OpenSpeechBubbleMobile").style.display = "block";
+			}
+		}
+	</script><!--Muestra Dialogos de Guardia en Moviles end-->
+
+	<!--Btn Play Pause-->
+	<script>
+		var audioPlayer = document.getElementById("myAudioPlayer"); 
+		var imagePlayPause = document.getElementById("imagePlayPauseMusicRCK"); 
+
+
+		function playPauseAudio(){
+			if(imagePlayPause.getAttribute('src') === "images/images-UMG/IconPlay.png")  
+			{
+				audioPlayer.play(); 
+				imagePlayPause.src = "images/images-UMG/IconPause.png"
+			} 
+			else
+			{
+				audioPlayer.pause();
+				imagePlayPause.src = "images/images-UMG/IconPlay.png"
+			}
+		}
+	</script><!--Btn Play Pause end-->
+
+</body>
+</html>
