@@ -1,0 +1,299 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+.bubble {
+    position: relative;
+    background: #ffffff;
+    color: #000000;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 20px;
+    filter: drop-shadow(5px 5px 2px #adadad);
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 5%;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 20px 0 0 20px;
+    border-color: transparent transparent transparent #ffffff;
+    top: 50%;
+    right: -20px;
+    margin-top: -10px;
+}
+
+@media (max-width: 650px) {
+    .hideBGImageOnMobile 
+    {
+        background-image: none !important; 
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    .rckEntranceGuardFontSize {
+      font-size: 1.3vw;
+    }
+
+    .rckHeigthWidth-1{
+      height: 50%; 
+      width: 50%;
+    }
+
+    .rckMinVH{
+      min-height: 100vh !important;
+    }
+
+    .rckCotizador{
+      height: 1030px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .rckEntranceGuardFontSize {
+      font-size: 1.4vw;
+    }
+
+    .rckHeigthWidth-1{
+      height: 50%; 
+      width: 50%;
+    }
+
+    .rckMinVH{
+      min-height: 100vh !important;
+    }
+
+    .rckCotizador{
+      height: 830px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  .rckCotizador{
+    height: 830px;
+  }
+}
+
+
+@media screen and (min-width: 1001px) {
+  .rckFontSizeTitle {
+    font-size: 70px !important;
+  }
+    
+  .rckFontSize {
+    font-size: 28px !important;
+  }
+  
+  .rckHeigthWidth-1{
+    height: 50%; 
+    width: 50%;
+  }
+
+    
+  .rckMinVH{
+    min-height: 100vh !important;
+  }
+}
+  
+@media screen and (max-width: 1000px) {
+  .rckFontSizeTitle {
+    font-size: 70px !important;
+  }
+
+  .rckFontSize {
+    font-size: 22px !important;
+  }
+
+    .rckHeigthWidth-1{
+      height: 75%; 
+      width: 75%;
+    }
+
+    .rckMinVH{
+      min-height: 100vh !important;
+    }
+
+    .rckCotizador{
+      height: 730px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .rckFontSizeTitle {
+    font-size: 8svw !important;
+  }
+
+  .rckFontSize {
+    font-size: 20px !important;
+  }
+
+    .rckMinVH{
+      min-height: 100vh !important;
+    }
+
+    .rckHeigthWidth-1{
+      height: 100%; 
+      width: 100%;
+    }
+
+    .rckCotizador{
+      height: 630px;
+    }
+}
+
+a.translationButton{
+  color: rgb(255, 255, 255); 
+  padding: 0 10px; 
+  font-size: 12px;
+}
+
+a.translationButton:hover{
+  color: aquamarine !important; 
+}
+
+a.translationButtonActive{
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
+a.greenHover:hover{
+  color: #34975C !important; 
+}
+
+a.whiteHover:hover{
+  color: #ffffff !important; 
+}
+
+a.amoradaLinkHover{
+  color: #273C4E !important; 
+}
+
+a.amoradaLinkHover:hover{
+  color: #AEB09C !important; 
+}
+
+a.grayLink{
+  color: grey !important;
+}
+
+a.amoradaBlue{
+  background-color: #273C4E !important; 
+}
+
+a.amoradaBlue:hover{
+  background-color: #AEB09C !important;
+}
+
+a.amoradaGold{
+  background-color: #AEB09C !important; 
+}
+
+a.amoradaGold:hover{
+  background-color: grey !important;
+}
+
+a.amoradaSkin{
+  background-color: #E0C1AE !important; 
+}
+
+a.amoradaSkin:hover{
+  background-color: grey !important;
+}
+
+a.buttonRed{
+  background-color: red !important; 
+}
+
+a.buttonRed:hover{
+  background-color: firebrick !important;
+}
+
+a.buttonRedPortofolio{
+  background-color: #ffffff !important; 
+}
+a.buttonRedPortofolio:hover{
+  background-color: #ff0000 !important;
+}
+
+
+.amoradaBlue{
+  color: #273C4E !important; 
+}
+
+.amoradaGoldGoToTop:hover{
+  background-color: #AEB09C !important;
+}
+
+.amoradaGold{
+  color: #AEB09C !important; 
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.amoradaBlue{
+  background-color: #273C4E !important; 
+}
+
+div.amoradaBlue:hover{
+  background-color: #AEB09C !important;
+}
+
+.button-light.button-gold:not(.button-border) { background-color: #fab131 !important; }
+.button-3d.button-gold:hover,
+.button-reveal.button-gold:hover,
+.button-border.button-gold:hover,
+.button-border.button-gold.button-fill::before { background-color: #fab131 !important; }
+
+.button-border.button-gold,
+.button-border.button-gold.button-fill.button-light:hover {
+	color: #fab131 !important;
+	border-color: #fab131 !important;
+}
+
+.button-border.button-gold:hover,
+.button-border.button-gold.button-fill.button-light:hover { color: #333 !important; }
+
+
+
+.button-vfred:not(.button-border) { background-color: #D45555 !important; }
+.button-3d.button-vfred:hover,
+.button-reveal.button-vfred:hover,
+.button-border.button-vfred:hover,
+.button-border.button-vfred.button-fill::before { background-color: #D45555 !important; }
+.button-vfred:hover { background-color: #DDAE55 !important; }
+
+.button-border.button-vfred,
+.button-border.button-vfred.button-fill.button-light:hover {
+	color: #D45555 !important;
+	border-color: #D45555 !important;
+}
+
+.button-border.button-vfred:hover,
+.button-border.button-vfred.button-fill.button-light:hover { color: #ffffff !important; }
+
+.button-vfred:not(.button-border) {
+  background-color: #D45555;
+}
+.button-vfred.button-3d:hover, .button-vfred.button-reveal:hover, .button-vfred.button-border:hover, .button-vfred.button-border.button-fill::before {
+  background-color: #D45555 !important;
+}
+.button-border.button-vfred, .button-border.button-light.button-vfred {
+  color: #D45555;
+  border-color: #D45555;
+}
+

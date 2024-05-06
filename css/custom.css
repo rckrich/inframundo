@@ -37,7 +37,6 @@
     {
         background-image: none !important; 
     }
-
 }
 
 @media screen and (min-width: 1301px) {
@@ -45,14 +44,17 @@
       font-size: 1.3vw;
     }
 
-    .biker-size
-    {
-      width: 180px;
-      --animate-duration: 3s;
+    .rckHeigthWidth-1{
+      height: 50%; 
+      width: 50%;
     }
 
-    .roadmap-completed-text{
-      font-size: 80px;
+    .rckMinVH{
+      min-height: 100vh !important;
+    }
+
+    .rckCotizador{
+      height: 1030px;
     }
 }
 
@@ -61,79 +63,92 @@
       font-size: 1.4vw;
     }
 
-    .biker-size
-    {
-      width: 180px;
-      --animate-duration: 3s;
+    .rckHeigthWidth-1{
+      height: 50%; 
+      width: 50%;
     }
 
-    .roadmap-completed-text{
-      font-size: 80px;
+    .rckMinVH{
+      min-height: 100vh !important;
     }
+
+    .rckCotizador{
+      height: 830px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  .rckCotizador{
+    height: 830px;
+  }
 }
 
 
 @media screen and (min-width: 1001px) {
-    .rckFontSize {
-      font-size: 1.5vw;
-    }
+  .rckFontSizeTitle {
+    font-size: 70px !important;
+  }
+    
+  .rckFontSize {
+    font-size: 28px !important;
+  }
+  
+  .rckHeigthWidth-1{
+    height: 50%; 
+    width: 50%;
+  }
 
-    .biker-size
-    {
-      width: 180px;
-      --animate-duration: 3s;
-    }
-
-    .roadmap-completed-text{
-      font-size: 80px;
-    }
+    
+  .rckMinVH{
+    min-height: 100vh !important;
+  }
 }
   
 @media screen and (max-width: 1000px) {
-    .rckFontSize {
-      font-size: 18px;
+  .rckFontSizeTitle {
+    font-size: 70px !important;
+  }
+
+  .rckFontSize {
+    font-size: 22px !important;
+  }
+
+    .rckHeigthWidth-1{
+      height: 75%; 
+      width: 75%;
     }
 
-    .biker-size
-    {
-      width: 140px;
-      --animate-duration: 2s;
+    .rckMinVH{
+      min-height: 100vh !important;
     }
 
-    .roadmap-width-reduction{
-      max-width: 80%; 
-      right: 0; 
-      left: 0; 
-      margin-right: auto; 
-      margin-left: auto;
-    }
-
-    .roadmap-completed-text{
-      font-size: 80px;
+    .rckCotizador{
+      height: 730px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .rckFontSize {
-      font-size: 4vw;
+  .rckFontSizeTitle {
+    font-size: 8svw !important;
+  }
+
+  .rckFontSize {
+    font-size: 20px !important;
+  }
+
+    .rckMinVH{
+      min-height: 100vh !important;
     }
 
-    .biker-size
-    {
-      width: 100px;
-      --animate-duration: 2s;
+    .rckHeigthWidth-1{
+      height: 100%; 
+      width: 100%;
     }
 
-    .roadmap-width-reduction{
-      max-width: 80%; 
-      right: 0; 
-      left: 0; 
-      margin-right: auto; 
-      margin-left: auto;
-    }
-
-    .roadmap-completed-text{
-      font-size: 50px;
+    .rckCotizador{
+      height: 630px;
     }
 }
 
@@ -152,13 +167,124 @@ a.translationButtonActive{
   text-decoration: underline !important;
 }
 
-.full-width{
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  height: auto;
-  margin-top: auto;
-  left: 50%;
- }
+a.greenHover:hover{
+  color: #34975C !important; 
+}
 
+a.whiteHover:hover{
+  color: #ffffff !important; 
+}
+
+a.amoradaLinkHover{
+  color: #273C4E !important; 
+}
+
+a.amoradaLinkHover:hover{
+  color: #AEB09C !important; 
+}
+
+a.grayLink{
+  color: grey !important;
+}
+
+a.amoradaBlue{
+  background-color: #273C4E !important; 
+}
+
+a.amoradaBlue:hover{
+  background-color: #AEB09C !important;
+}
+
+a.amoradaGold{
+  background-color: #AEB09C !important; 
+}
+
+a.amoradaGold:hover{
+  background-color: grey !important;
+}
+
+a.amoradaSkin{
+  background-color: #E0C1AE !important; 
+}
+
+a.amoradaSkin:hover{
+  background-color: grey !important;
+}
+
+a.buttonRed{
+  background-color: red !important; 
+}
+
+a.buttonRed:hover{
+  background-color: firebrick !important;
+}
+
+.amoradaBlue{
+  color: #273C4E !important; 
+}
+
+.amoradaGoldGoToTop:hover{
+  background-color: #AEB09C !important;
+}
+
+.amoradaGold{
+  color: #AEB09C !important; 
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.amoradaBlue{
+  background-color: #273C4E !important; 
+}
+
+div.amoradaBlue:hover{
+  background-color: #AEB09C !important;
+}
+
+.button-light.button-gold:not(.button-border) { background-color: #fab131 !important; }
+.button-3d.button-gold:hover,
+.button-reveal.button-gold:hover,
+.button-border.button-gold:hover,
+.button-border.button-gold.button-fill::before { background-color: #fab131 !important; }
+
+.button-border.button-gold,
+.button-border.button-gold.button-fill.button-light:hover {
+	color: #fab131 !important;
+	border-color: #fab131 !important;
+}
+
+.button-border.button-gold:hover,
+.button-border.button-gold.button-fill.button-light:hover { color: #333 !important; }
+
+
+
+.button-vfred:not(.button-border) { background-color: #D45555 !important; }
+.button-3d.button-vfred:hover,
+.button-reveal.button-vfred:hover,
+.button-border.button-vfred:hover,
+.button-border.button-vfred.button-fill::before { background-color: #D45555 !important; }
+.button-vfred:hover { background-color: #DDAE55 !important; }
+
+.button-border.button-vfred,
+.button-border.button-vfred.button-fill.button-light:hover {
+	color: #D45555 !important;
+	border-color: #D45555 !important;
+}
+
+.button-border.button-vfred:hover,
+.button-border.button-vfred.button-fill.button-light:hover { color: #ffffff !important; }
+
+.button-vfred:not(.button-border) {
+  background-color: #D45555;
+}
+.button-vfred.button-3d:hover, .button-vfred.button-reveal:hover, .button-vfred.button-border:hover, .button-vfred.button-border.button-fill::before {
+  background-color: #D45555 !important;
+}
+.button-border.button-vfred, .button-border.button-light.button-vfred {
+  color: #D45555;
+  border-color: #D45555;
+}
 

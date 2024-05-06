@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    
+<head>
+
+    <title>DinoSuari - Contact Form</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rich G - RCK Games" />
+    <meta name="description" content="DinoSauri - Contact Form">
+    
+    <!-- Stylesheets
+	============================================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css" type="text/css" />
+
+    <style>
+        .invalid-feedback, .empty-feedback {
+            display: none;    
+        }
+
+        .was-validated :placeholder-shown:invalid ~ .empty-feedback { 
+            display: block;
+        }
+
+        .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {  
+            display: block;
+        }
+
+        .is-invalid,
+        .was-validated :invalid { 
+            border-color: #dc3545;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+
+    =======================================================================
+ -->
+ 
+
+ <!--<div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">-->
+<div class="flex items-center min-h-screen" style="background-color:#1a1a1a;">
+    <div class="container mx-auto">
+        <div class="max-w-xl mx-auto my-10 p-5 rounded-md shadow-sm" style="background-color: #e7e7e7;">        
+            <div class="text-center">          
+                <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">          
+                    <!--Contact Us-->
+                    Suscríbete        
+                </h1>        
+                <p class="text-gray-400 dark:text-gray-400">       
+                    <!--Fill up the form below to send us a message.-->
+                    Recibe información sobre cuándo estará disponible el proyecto de Arte Digital de Datoer: "Inframundo desde la voz de la calle"
+                </p>
+            </div>
+
+            <div class="m-7">
+                <form action="https://api.web3forms.com/submit" method="POST" id="form"> <!-- class="needs-validation" novalidate>  -->          
+                    <input type="hidden" name="access_key" value="929cfc90-18fc-4def-9880-b29da52e78b9" />
+                    <input type="hidden" name="redirect" value="https://inframundo.io/thanks.html">
+                    <input type="hidden" name="from_name" value="Inframundo.io - Registro">
+                    <input type="hidden" name="subject" value="Inframundo.io - Alguien se Registró" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                    <!--<input type="hidden" name="ccemail" value="asauri.in@gmail.com" />-->
+                    <div class="flex mb-6 space-x-4">
+                        <div class="w-full"> <!-- md:w-1/2">-->
+                            <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre</label>
+                            <input type="text" name="Nombre Participante A" id="first_name1" placeholder="" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                Este campo es obligatorio.
+                            </div>                        
+                        </div>
+                        <!--
+                        <div class="w-full"> 
+                            <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Celular del Participante A</label>
+                            <input type="text" name="Celular Participante A" id="phone1" placeholder="999..." required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                Introduce un número de contacto
+                            </div>
+                        </div>
+                        -->
+                        <!--
+                        <div class="w-full md:w-1/2">
+                            <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Apellido</label>
+                            <input type="text" name="last_name" id="lname" placeholder="" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                Este campo es obligatorio.
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    <div class="flex mb-6 space-x-4">         
+                        <div class="w-full">
+                            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                            <div class="empty-feedback text-red-400 text-sm mt-1">
+                                Este campo es obligatorio.
+                            </div>
+                            <div class="invalid-feedback text-red-400 text-sm mt-1">
+                                Porfavor introduce un correo electrónico válido.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+                    <div class="flex mb-6 space-x-4">
+                        <div class="w-full"> 
+                            <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre del Participante B</label>
+                            <input type="text" name="Nombre Participante B" id="first_name2" placeholder="Dino B" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                Este campo es obligatorio.
+                            </div>                        
+                        </div>
+                          
+                        <div class="w-full">
+                            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                            <div class="empty-feedback text-red-400 text-sm mt-1">
+                                Este campo es obligatorio.
+                            </div>
+                            <div class="invalid-feedback text-red-400 text-sm mt-1">
+                                Porfavor introduce un correo electrónico válido.
+                            </div>
+                        </div>
+                        
+                        <div class="w-full"> 
+                            <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Celular del Participante B</label>
+                            <input type="text" name="Celular Participante B" id="phone2" placeholder="999..." required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                Introduce un número de contacto
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Mensaje</label>              
+                        <textarea rows="5" name="Mensaje" id="message" placeholder="Escribe un mensaje" class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" ></textarea>
+                        <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                            Porfavor escribe tu mensaje.
+                        </div>
+                    </div>
+                    
+
+                    <br>
+                    
+                    <div class="mb-6" style="text-align: center;">
+                        <button type="submit" class="text-white rounded-md focus:bg-indigo-600 focus:outline-none" style="width: 100px; height: 40px; background-color: red;">
+                                Enviar               
+                        </button>
+                    </div>
+                    <p class="text-base text-center text-gray-400" id="result"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <script>
+        (function () {
+            "use strict";
+    /*
+    * Form Validation
+    */
+
+    // Fetch all the forms we want to apply custom validation styles to
+    const forms = document.querySelectorAll(".needs-validation");
+    const result = document.getElementById("result");
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+        "submit",
+        function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            form.querySelectorAll(":invalid")[0].focus();
+            } else {
+            /*
+            * Form Submission using fetch()
+            */
+
+            const formData = new FormData(form);
+            event.preventDefault();
+            event.stopPropagation();
+            const object = {};
+            formData.forEach((value, key) => {
+                object[key] = value;
+            });
+            const json = JSON.stringify(object);
+            result.innerHTML = "Porfavor esepere...";
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+                },
+                body: json
+            })
+                .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    //result.innerHTML = json.message;
+                    result.innerHTML = "Registro Recibido. <br>Pasa al Proshop de Provincia. <br>Paga la couta de inscripción y completa tu registro.";
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-green-500");
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-red-500");
+                }
+                })
+                .catch((error) => {
+                console.log(error);
+                result.innerHTML = "Algo salió mal, intentalo de nuevo.";
+                })
+                .then(function () {
+                form.reset();
+                form.classList.remove("was-validated");
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 10000);
+                });
+            }
+            form.classList.add("was-validated");
+        },
+        false
+        );
+    });
+    })();
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>

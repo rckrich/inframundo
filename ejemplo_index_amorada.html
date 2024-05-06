@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZXR4SK2QZ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-TZXR4SK2QZ');
+	</script>
+
+	<title>Amorada</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rich G - RCK Games" />
+    <meta name="description" content="Amorada es un complejo de departamentos planeado para una vida práctica, de acuerdo a tu ritmo de vida, simplemente lo que necesitas.">
+
+    <link rel="icon" href="Amorada-Icon.png">
+
+
+    <meta name="twitter:card" content="summary" />
+    <!-- <meta name="twitter:site" content="@UMGbar" /> -->
+    <meta name="twitter:title" content="Amorada Departamentos" />
+    <meta name="twitter:description" content="Amorada es un complejo de departamentos planeado para una vida práctica, de acuerdo a tu ritmo de vida, simplemente lo que necesitas." />
+    <meta name="twitter:image" content="https://viten.mx/images/images-viten/Amorada-Image-Socials.jpg" />
+
+    <meta property="og:title" content="Amorada Departamentos" />
+    <meta property="og:description" content="Amorada es un complejo de departamentos planeado para una vida práctica, de acuerdo a tu ritmo de vida, simplemente lo que necesitas." />
+    <meta property="og:type" content="website" />  
+    <meta property="og:url" content="https://viten.mx/amorada" />
+    <meta property="og:image" content="https://viten.mx/images/images-viten/Amorada-Image-Socials.jpg" />
+
+
+	<!-- Stylesheets
+	============================================= -->
+    </style>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+	<!-- Agregar Google Analytics -->
+
+	<!-- Floating Contact Button
+	============================================= -->
+	<style>
+		.floating-contact-wrap {
+			position: fixed;
+			left: 50px;
+			bottom: 60px;
+			z-index: 299;
+			-webkit-transition: right .2s ease;
+			-o-transition: right .2s ease;
+			transition: right .2s ease;
+		}
+
+		.stretched .floating-contact-wrap + #gotoTop { bottom: 100px; }
+
+		.floating-contact-wrap .floating-contact-btn {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 60px;
+			height: 60px;
+			border-radius: 60px;
+			background-color: #1ABC9C;
+			color: #FFF;
+			cursor: pointer;
+			z-index: 3;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			transition: transform .3s ease;
+		}
+
+		.floating-contact-wrap .floating-contact-btn:hover,
+		.floating-contact-wrap.active .floating-contact-btn {
+			-webkit-transform: translate(-50%, -50%) scale(1.1);
+			transform: translate(-50%, -50%) scale(1.1);
+			background-color: #222;
+		}
+
+		.floating-contact-wrap .floating-contact-btn .floating-contact-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 22px;
+			-webkit-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+			transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+			-webkit-transition-property: opacity, -webkit-transform;
+			transition-property: opacity, transform;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			
+		}
+
+		.floating-contact-wrap .floating-contact-btn .floating-contact-icon.btn-active,
+		.floating-contact-wrap.active .floating-contact-btn .floating-contact-icon {
+			opacity: 0;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.floating-contact-wrap.active .floating-contact-btn .floating-contact-icon.btn-active {
+			opacity: 1;
+			-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+
+		.floating-contact-wrap .floating-contact-box {
+			opacity: 0;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 380px;
+			background-color: #fff;
+			border-radius: 6px;
+			z-index: 1;
+			-webkit-transform-origin: right bottom;
+			transform-origin: right bottom;
+			box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.07);
+			-webkit-transform: scale(.01);
+			transform: scale(.01);
+			-webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+			transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+			
+		}
+
+		.floating-contact-wrap.active .floating-contact-box {
+			opacity: 1;
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+
+		@media (max-width: 767.98px) { .floating-contact-wrap .floating-contact-box { width: 340px; } }
+
+		.css3-spinner { background-color: rgba(255, 255, 255, 0.8) }
+
+		#floating-contact-submitted,
+		.floating-contact-success #floating-contact,
+		.floating-contact-success .floating-contact-heading,
+		body:not(.floating-contact-processing) .floating-contact-loader { display: none; }
+
+		.floating-contact-success #floating-contact-submitted { display: block; }
+
+	</style>
+	
+</head>
+
+
+<body class="stretched" onload="hiddenOnMobile()" style="background-color: #ffffff;">
+
+
+	<!-- The Main Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix" style="background-color: #ffffff;">
+
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="border-full-header" data-sticky-shrink="true" 
+		>
+            <div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+                        
+                        <!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="https://viten.mx/amorada" class="standard-logo" data-dark-logo="images/images-viten/Viten-Logo-White-Header.png"><img src="images/images-viten/Amorada-Logo-White-Header.png" alt="Amorada Logo"></a>
+							<a href="https://viten.mx/amorada" class="retina-logo" data-dark-logo="images/images-viten/Viten-Logo-White-Header@2x.png"><img src="images/images-viten/Amorada-Logo-White-Header.png" alt="Amorada Logo"></a>
+						</div><!-- #logo end -->
+
+
+						<!-- Rigth Button
+						============================================= -->
+                        <div class="header-misc">
+							<!-- <a href="#modalWalletConnectionComingSoon" data-lightbox="inline" class="button button-border button-rounded button-fill fill-from-bottom button-light button-mini"><span>Connect Wallet</span></a> -->
+						</div><!-- Rigth Button end -->
+
+		
+                        <div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+
+
+                        <!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu style-2">
+							<!-- PC Menu
+							============================================= -->
+							<ul class="menu-container">
+								<!--
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#proyecto" data-scrollto="#proyecto"><div>Proyecto</div></a>
+								</li>
+								-->
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#galeria" data-scrollto="#galeria"><div>Galería</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#amenidades" data-scrollto="#amenidades"><div>Amenidades</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#ubicacion" data-scrollto="#ubicacion"><div>Ubicación</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#departamentos" data-scrollto="#departamentos"><div>Departamentos</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#cotizador" data-scrollto="#cotizador"><div>Cotizador</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#contacto" data-scrollto="#contacto"><div>Contacto</div></a>
+								</li>
+							</ul><!-- PC Menu end -->
+							<!-- Mobile Menu
+							============================================= -->
+							<ul class="menu-container mobile-primary-menu">
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#proyecto" data-scrollto="#proyecto"><div>Proyecto</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#galeria" data-scrollto="#galeria"><div>Galería</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#amenidades" data-scrollto="#amenidades"><div>Amenidades</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#ubicacion" data-scrollto="#ubicacion"><div>Ubicación</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#departamentos" data-scrollto="#departamentos"><div>Departamentos</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#cotizador" data-scrollto="#cotizador"><div>Cotizador</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link amoradaLinkHover" style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="#contacto" data-scrollto="#contacto"><div>Contacto</div></a>
+								</li>
+								<br>
+								<br>
+							</ul><!-- Mobile Menu end -->
+						</nav><!-- #primary-menu end -->
+
+                    </div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>	
+		</header><!-- #header end -->
+
+
+		<!-- Page Title
+		============================================= -->
+		<section id="slider" class="slider-element slider-parallax rckMinVH dark include-header" style="object-fit: cover;">
+			<div class="slider-inner" style="background-image: url('images/images-viten/Amorada-Header.jpg'); filter: grayscale(0%)">
+				
+				<div class="vertical-middle">
+					<div class="container text-center">				
+						<img src="images/images-viten/Amorada-Isotipo-01.png" style="display: block; margin-left: auto; margin-right: auto; max-height: 250px;" alt="Amorada logo">
+						
+						<p style="font-family: 'BASKERVILLE', sans-serif; text-shadow: -0.5px 0.5px 1px #AEB09C;">
+							<b style="font-size: 30px;">Departamentos en Mérida, Yucatán</b>
+							<br>
+							<i style="font-size: 22px;">En el corazón de la zona norte de la ciudad, desde 4,6 MDP</i>
+						</p>
+						
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- Page Title end -->
+
+
+		<!-- Proyecto
+		============================================= -->
+		<section id="content" style="background-color: #ffffff;">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div id="proyecto"></div>
+					<div class="container-fluid px-5 clearfix">
+						<img src="images/images-viten/Amorada-Logotipo-01.png" class="rckHeigthWidth-1" style="display: block; margin-left: auto; margin-right: auto; max-width: 300px;" alt="Amorada logo">			
+					</div>
+					
+					<br>
+					<br>
+
+					<div class="row">
+						<div class="col-md-6" style="border: 3px solid #ffffff00; padding-bottom: 50px;">
+							<img src="images/images-viten/Amorada-01-FACHADA-PPAL.jpg" style="border-radius: 10px" alt="Viten frase El Valor de Desarrollar.">
+						</div>
+	
+						<div class="col-md-6 center" style="border: 3px solid #ffffff00;">
+							<p class="amoradaBlue" style="text-align: center; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">
+								<b style="font-size: 30px;">Tu vida sin complicaciones.</b>
+								<br>
+								<i style="font-size: 50px;">Simplemente.</i> 
+								<br>
+								<b style="font-size: 30px;">Como debe ser.</b>
+								<br>
+								<br>
+								Amorada es un complejo de departamentos planeado para una vida práctica, de acuerdo a tu ritmo de vida, simplemente lo que necesitas.
+							</p>
+
+							<!--
+							<div class="button shadow amoradaBlue" style="border-radius: 5px;" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg">
+								<b style="font-size: 18px; color: white;">Descarga el Brochure</b>
+							</div>
+							-->
+
+							<a target="_blank" href="Brochures/Amorada_Brochure.pdf" class="button shadow amoradaBlue" style="border-radius: 5px;">
+								<span style="font-size: 16px; color: white;">Descarga el Brochure</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<div class="scrollmenu" style="background-color: #273C4E;">
+			<img src="images/images-viten/Amorada-02-FACHADA-LATERAL.jpg" style="max-width: 1500px;" alt="Viten frase El Valor de Desarrollar.">
+		</div>
+		<p class="amoradaGold" style="background-color: #273C4E; text-align: center; font-family: 'BASKERVILLE', sans-serif; margin-bottom: -5px;">
+			<i style="font-size: 20px;">Scroll</i> → 
+		</p>
+	
+		<section id="content" style="background-color: #273C4E;">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div style="border: 3px solid #ffffff00; padding-bottom: 50px; text-align: center;">
+						<p class="amoradaGold" style="text-align: center; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">
+							<b style="font-size: 30px;">12 DEPARTAMENTOS</b>
+						</p>
+						<br>
+						<br>
+						<br>
+						<img src="images/images-viten/Amorada-isotipo-frase2.png" class="rckHeigthWidth-1" style="display: block; margin-left: auto; margin-right: auto; max-width: 600px;" alt="Viten frase El Valor de Desarrollar.">
+						<br>
+						<br>
+						<br>
+						<p class="amoradaGold" style="text-align: center; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">
+							<b style="font-size: 25px;">Cómodo, accesible, a la mano.</b>
+							<br>
+							<i style="font-size: 40px;">Donde debes estar.</i> 
+						</p>
+
+						<a href="#ubicacion" data-scrollto="#ubicacion" class="button shadow amoradaGold" style="border-radius: 5px;">
+							<span style="font-size: 16px; color: #273C4E;">Ubicación</span>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- Proyecto end -->
+
+
+		<!-- Galeria
+		============================================= -->
+		<div id="galeria"></div>
+		<div class="masonry-thumbs grid-container grid-3 has-init-isotope" data-big="2" data-lightbox="gallery" style="position: relative; height: 400px; background-color: #ffffff;">
+			<a class="grid-item" href="images/images-viten/Amorada-03-TIPOLOGIA-01-SOCIAL.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-03-TIPOLOGIA-01-SOCIAL.jpg" alt="Gallery Thumb 1"></a>
+			<a class="grid-item grid-item-big" href="images/images-viten/Amorada-04-TIPO-01-RECAMARA.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-04-TIPO-01-RECAMARA.jpg" alt="Gallery Thumb 2"></a>
+			<a class="grid-item" href="images/images-viten/Amorada-07-FLEX-ROOM-TV.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-07-FLEX-ROOM-TV.jpg" alt="Gallery Thumb 3"></a>
+			<a class="grid-item" href="images/images-viten/Amorada-09-FLEX-ROOM-KIDS.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-09-FLEX-ROOM-KIDS.jpg" alt="Gallery Thumb 4"></a>
+			<a class="grid-item" href="images/images-viten/Amorada-11-TIPO-02-BANO-PPAL.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-11-TIPO-02-BANO-PPAL.jpg" alt="Gallery Thumb 5"></a>
+			<a class="grid-item" href="images/images-viten/Amorada-10-TIPO-02-REC-PPAL.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-10-TIPO-02-REC-PPAL.jpg" alt="Gallery Thumb 6"></a>
+			<a class="grid-item grid-item-big" href="images/images-viten/Amorada-06-TIPO-02-SOCIAL-02.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-06-TIPO-02-SOCIAL-02.jpg" alt="Gallery Thumb 7"></a>
+			<a class="grid-item" href="images/images-viten/Amorada-16-TIPO-02-BANO-REC-SECUNDARIA.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-16-TIPO-02-BANO-REC-SECUNDARIA.jpg" alt="Gallery Thumb 8"></a>
+		</div>
+		<!-- Galeria end -->
+
+
+		<!-- Amenidades
+		============================================= -->
+		<section id="content" style="background-color: #273C4E;">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div id="amenidades"></div>
+
+					<div class="row">
+						<div class="" style="border: 3px solid #ffffff00; padding-bottom: 50px;">
+							<p class="amoradaGold" style="text-align: center; font-family: 'BASKERVILLE', sans-serif; font-size: 25px;">
+								<b>Un </b><i style="font-size: 40px;">rooftop</i><b> con</b>
+								<br>
+								<b>amenidades esenciales 
+								<br>
+								para relajar y estar.</b>
+							</p>
+						</div>
+	
+						<div class=" tabs tabs-alt tabs-justify clearfix ui-tabs ui-corner-all ui-widget ui-widget-content" id="tab-10" style="margin: auto;">
+							<ul class="tab-nav clearfix ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header" role="tablist" style="background-color: #273C4E;">
+								<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-37" aria-labelledby="ui-id-25" aria-selected="false" aria-expanded="false"><a style="background-color: #273C4E; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;" href="#tabs-37" tabindex="-1" class="ui-tabs-anchor" id="ui-id-25">Gimnasio</a></li>
+								<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-38" aria-labelledby="ui-id-26" aria-selected="false" aria-expanded="false"><a style="background-color: #273C4E; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;" href="#tabs-38" tabindex="-1" class="ui-tabs-anchor" id="ui-id-26">Piscina</a></li>
+								<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-39" aria-labelledby="ui-id-27" aria-selected="false" aria-expanded="false"><a style="background-color: #273C4E; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;" href="#tabs-39" tabindex="-1" class="ui-tabs-anchor" id="ui-id-27">Bar</a></li>
+								<li id="hideOnMobile" role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabs-40" aria-labelledby="ui-id-28" aria-selected="false" aria-expanded="false"><a style="background-color: #273C4E; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;" href="#tabs-40" tabindex="-1" class="ui-tabs-anchor" id="ui-id-28">Relax</a></li>
+							</ul>
+							<div class="tab-container">
+								<div class="text-center tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-37" aria-labelledby="ui-id-25" role="tabpanel" aria-hidden="true" style="display: none; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 22px;">
+									<span>Tener a unos metros un espacio dedicado para ti es parte de nuestra planeación, tómate tu tiempo, cuerpo y alma van de la mano.</span>
+								</div>
+								<div class="text-center tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-38" aria-labelledby="ui-id-26" role="tabpanel" aria-hidden="true" style="display: none; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 22px;">
+									<span>El verano prácticamente constante de Mérida hace imprescindible esta amenidad, en cualquier momento del día bájate la temperatura en la piscina de Amorada.</span>
+								</div>
+								<div class="text-center tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-39" aria-labelledby="ui-id-27" role="tabpanel" aria-hidden="false" style="display: none; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 22px;">
+									<span>Relájate y comparte momentos únicos que quedarán grabados para siempre.</span>
+								</div>
+								<div class="text-center tab-content clearfix ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-40" aria-labelledby="ui-id-28" role="tabpanel" aria-hidden="true" style="display: none; color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 22px;">
+									<span>¿Laptop o libro? en nuestra zona de estar podrás dedicarte un tiempo para alejarte de tu rutina.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="slider" class="section parallax m-0 border-top-0 dark skrollable skrollable-between center" style="background-image: url(images/images-viten/Amorada-13-ROOF.jpg); background-size: cover; padding: 220px 0px; background-position: 0px -168.426px;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+			<div class="container clearfix">
+				<img src="images/images-viten/Amorada-Logotipo-02.png" class="rckHeigthWidth-1" style="display: block; margin-left: auto; margin-right: auto; max-width: 350px;" alt="Amorada logo">			
+				<br>
+				<br>
+				<br>
+				<a target="_blank" href="Brochures/Amorada_Brochure.pdf" class="button shadow amoradaSkin" style="border-radius: 5px;">
+					<span style="font-size: 16px; color: white;">Descarga el Brochure</span>
+				</a>
+			</div>
+			
+		</section>
+		<!-- Amenidades end -->
+
+
+		<!-- Ubicacion
+		============================================= -->
+		<section id="content" style="background-color: #E0C1AE;">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div id="ubicacion"></div>
+
+					<div class="row">
+						<div class="col-md-6" style="border: 3px solid #ffffff00;">
+							<img src="images/images-viten/Amorada-isotipo-frase1.png" style="display: block; margin-left: auto; margin-right: auto; max-width: 350px;" alt="Amorada Isotipo">						
+							<br>
+							<br>
+							<p class="amoradaBlue" style="text-align: center; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">
+								<b style="font-size: 30px;">Estás donde</b>
+								<br>
+								<i style="font-size: 50px;">debes estar.</i> 
+								<br>
+								<br>
+								C. 33 entre 48 y 50, Benito Juárez Nte. 
+								<br>
+								97119 Mérida, Yuc.
+							</p>
+						</div>
+
+						<div class="col-md-6">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1466508638696!2d-89.62077248671879!3d21.02681735578169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676994301ab47%3A0x6237f5a6a5bd397e!2sC.%2033%20364%2C%20Benito%20Ju%C3%A1rez%20Nte.%2C%2097119%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1654631732183!5m2!1ses-419!2smx" width="400" height="400" style="border:1px solid black; border-radius: 2%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+
+						<!-- START FORM -->
+						<div class="center floating-contact-heading dark p-4 rounded" style="margin-top: 30px;">
+							<h3 class="mb-0 amoradaBlue">Contáctanos</h3>
+							<p class="mb-0 amoradaBlue">Nos pondremos en contacto contigo</p>
+						</div>
+						<div id="HSForm1" style="padding: 5%;"></div>
+						<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+						<script type="text/javascript">
+							hbspt.forms.create({
+								region: "na1",
+								portalId: "7533651",
+								formId: "85cf773e-79ec-4ab7-a305-a9c4ded56545",
+								target: "#HSForm1"
+							});
+						</script>
+						<!-- END FORM -->
+					</div>
+
+					<br>
+					<br>
+					
+				</div>
+			</div>
+		</section>
+		<!-- Ubicacion end -->
+
+
+		<!-- Departamentos
+		============================================= -->
+		<div class="section border-top-0 m-0" style="background-color: white;">
+			
+			<div id="departamentos"></div>
+
+			<div class="container text-center">
+				<div class="heading-block center" style="font-family: 'BASKERVILLE', sans-serif;">
+					<h2>Amorada 70</h2>
+					<span>Departamento</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<p style="font-size: 17px;">El modelo de departamento Amorada 70 cuenta con <i>70m<sup>2</sup></i> totales que incluyen <i>56m<sup>2</sup></i> de unidad, <i>12m<sup>2</sup></i> de cajón de estacionamiento y <i>2m<sup>2</sup></i> de bodega.</p>
+						<img src="images/images-viten/Amorada-Floor Plan 1rec.jpg" alt="Amorada 70 Apartment floorplant">						
+					</div>
+
+					<div id="carouselAmorada70" class="col-md-6 carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-04-TIPO-01-RECAMARA-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-03-TIPOLOGIA-01-SOCIAL-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-14-TIPO-01-BANO.jpg" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselAmorada70" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselAmorada70" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+				</div>
+
+				<br>
+				<br>
+
+				<p class="amoradaGold rckFontSize">1 Recámara | 1 Baño Completo | Cocina | Sala | Comedor | 1 Medio Baño | Área de Lavado | Bodega | 1 Estacionamiento Techado</p>
+
+			</div>
+
+			<br>
+			<br>
+			<div class="divider divider-sm divider-center"><i class="icon-circle2"></i></div>
+			<br>
+			<br>
+
+			<div class="container text-center">
+				<div class="heading-block center" style="font-family: 'BASKERVILLE', sans-serif;">
+					<h2>Amorada Dúplex</h2>
+					<span>Departamento</span>
+				</div>
+
+
+				<div class="row">
+					<div id="carouselAmorada135Floorplant" class="col-md-6 carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button style="background-color:#AEB09C;" type="button" data-bs-target="#carouselAmorada135Floorplant" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button style="background-color:#AEB09C;" type="button" data-bs-target="#carouselAmorada135Floorplant" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						</div>
+
+						<p style="font-size: 17px;">El modelo de departamento Amorada Dúplex cuenta con <i>142m<sup>2</sup></i> totales que incluyen <i>114m<sup>2</sup></i> de unidad, <i>26m<sup>2</sup></i> de cajones de estacionamiento y <i>1.5m<sup>2</sup></i> de bodega.</p>
+						
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/images-viten/Amorada-Floor Plan 2rec PB.jpg" class="d-block w-100" alt="...">
+								<p><i>Planta Baja</i></p>
+								<br>
+							</div>
+							<div class="carousel-item">
+								<img src="images/images-viten/Amorada-Floor Plan 2rec PA.jpg" class="d-block w-100" alt="...">
+								<p><i>Planta Alta</i></p>
+								<br>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselAmorada135Floorplant" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselAmorada135Floorplant" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+					
+
+					<div id="carouselAmorada135" class="col-md-6 carousel slide" data-bs-ride="carousel">
+						<br>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-10-TIPO-02-REC-PPAL-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-05-TIPO-02-SOCIAL-01-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-06-TIPO-02-SOCIAL-02-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-07-FLEX-ROOM-TV-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-08-FLEX-ROOM-GUEST-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-09-FLEX-ROOM-KIDS-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-11-TIPO-02-BANO-PPAL-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-15-TIPO-02-BANO-FLEX.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src="images/images-viten/Amorada-16-TIPO-02-BANO-REC-SECUNDARIA-carusel.jpg" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselAmorada135" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselAmorada135" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+				</div>
+
+				<br>
+				<br>
+
+				<p class="amoradaGold rckFontSize">2 Niveles | 3 Recámaras | 3 Baños Completos | Cocina | Sala | Comedor | Área de Lavado | Bodega | 2 Estacionamientos Techados</p>
+
+			</div>
+
+			<br>
+			<br>
+			<div class="divider divider-sm divider-center"><i class="icon-circle2"></i></div>
+			<br>
+			<br>
+
+		</div>
+		<!-- Departamentos end -->
+
+
+		<!-- Cotizador
+		============================================= -->
+		<div id="cotizador" style="background-color: #273C4E;">
+			<iframe src="cotizador/cotizador-amorada/index.html" class="rckCotizador" loading="lazy" scrolling="yes" width="100%" height="830px" title="Cotizador Amorada"></iframe>
+		</div>
+		<!-- Cotizador end -->
+
+
+		<!-- Avance de Obra
+		============================================= -->
+		<div style="background-color: #273C4E;">
+			<h1 class="text-center" style="color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 22px;">AVANCES DE OBRA</h1>
+			
+		<!-- Avances de obras pasados, me pidieron quitarlos
+
+			<p class="text-center" style="color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">Abril 2023</p>
+			<div class="masonry-thumbs grid-container grid-2 has-init-isotope" data-lightbox="gallery" style="position: relative; height: 400px; background-color: #ffffff;">
+				<a class="grid-item" href="images/images-viten/Amorada-Avance1-04-2023.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-Avance1-04-2023.jpg" alt="Gallery Thumb 1"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-Avance2-04-2023.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-Avance2-04-2023.jpg" alt="Gallery Thumb 2"></a>
+			</div>
+
+			<br>
+			<br>
+			<br>
+
+			<p class="text-center" style="color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">Mayo 2023</p>
+			<div class="masonry-thumbs grid-container grid-3 has-init-isotope" data-lightbox="gallery" style="position: relative; height: 400px; background-color: #ffffff;">
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Mayo-2.jpeg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Mayo-2.jpeg" alt="Gallery Thumb 1"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Mayo-1.jpeg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Mayo-1.jpeg" alt="Gallery Thumb 4"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Mayo-3.jpeg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Mayo-3.jpeg" alt="Gallery Thumb 2"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Mayo-4.jpeg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Mayo-4.jpeg" alt="Gallery Thumb 3"></a>
+			</div>
+
+			<br>
+			<br>
+			<br>
+		
+			<p class="text-center" style="color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">Agosto 2023</p>
+			<div class="masonry-thumbs grid-container grid-4 has-init-isotope" data-lightbox="gallery" style="position: relative; height: 400px; background-color: #ffffff;">
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-1.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-1.jpg" alt="Gallery Thumb 1"></a>
+				<a class="grid-item grid-item-big" href="images/images-viten/Amorada-AvanceObra-Ago-9.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-9.jpg" alt="Gallery Thumb 9"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-2.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-2.jpg" alt="Gallery Thumb 2"></a>
+				<a class="grid-item grid-item-big" href="images/images-viten/Amorada-AvanceObra-Ago-5.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-5.jpg" alt="Gallery Thumb 5"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-3.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-3.jpg" alt="Gallery Thumb 3"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-4.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-4.jpg" alt="Gallery Thumb 4"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-6.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-6.jpg" alt="Gallery Thumb 6"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-7.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-7.jpg" alt="Gallery Thumb 7"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-8.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-8.jpg" alt="Gallery Thumb 8"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Ago-10.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Ago-10.jpg" alt="Gallery Thumb 10"></a>
+			</div>
+
+			-->
+
+			<!-- <p class="text-center" style="color: #AEB09C; font-family: 'BASKERVILLE', sans-serif; font-size: 20px;">Octubre 2023</p> -->
+			<div class="masonry-thumbs grid-container grid-4 has-init-isotope" data-lightbox="gallery" style="position: relative; height: 400px; background-color: #ffffff;">
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-2.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-2.jpg" alt="Gallery Thumb 9"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-3.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-3.jpg" alt="Gallery Thumb 2"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-4.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-4.jpg" alt="Gallery Thumb 5"></a>
+				<a class="grid-item grid-item-big" href="images/images-viten/Amorada-AvanceObra-Enero2024-5.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-5.jpg" alt="Gallery Thumb 3"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-6.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-6.jpg" alt="Gallery Thumb 4"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-7.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-7.jpg" alt="Gallery Thumb 6"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-8.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-8.jpg" alt="Gallery Thumb 7"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-9.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-9.jpg" alt="Gallery Thumb 8"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-10.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-10.jpg" alt="Gallery Thumb 10"></a>
+				<a class="grid-item" href="images/images-viten/Amorada-AvanceObra-Enero2024-1.jpg" data-lightbox="gallery-item" style="position: absolute;"><img src="images/images-viten/Amorada-AvanceObra-Enero2024-1.jpg" alt="Gallery Thumb 1"></a>
+			</div>
+
+		</div>
+		<!-- Avance de Obra end -->
+
+		<br>
+		<div class="divider divider-sm divider-center"><i class="icon-circle2"></i></div>
+
+		<!-- START FORM -->
+		<div class="center floating-contact-heading dark p-4 rounded" >
+			<h3 class="mb-0 amoradaBlue">Contáctanos</h3>
+			<p class="mb-0 amoradaBlue">Nos pondremos en contacto contigo</p>
+		</div>
+		<div id="HSForm2" style="padding: 5%;"></div>
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+		<script type="text/javascript">
+			hbspt.forms.create({
+				region: "na1",
+				portalId: "7533651",
+				formId: "85cf773e-79ec-4ab7-a305-a9c4ded56545",
+				target: "#HSForm2"
+			});
+		</script>
+		<!-- END FORM -->
+
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container">
+		
+				<!-- Add something cool later, maybe twitter preview posts -->
+
+			</div>
+
+			<div id="contacto"></div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container">
+					<div class="text-center">
+						
+						<span>Un desarrollo de</span>
+						
+						<a href="https://viten.mx">
+							<img src="images/images-viten/Viten-Logo-White.png" class="mb-4" style="max-width: 140px;" alt="Viten Logo">						
+						</a>
+
+						<p>
+							Copyrights &copy; 2024 Todos los Derechos Reservados
+							<br>
+							Contacta con nosotros
+							<br>
+							info@viten.mx
+							<br>
+							<a class="grayLink" href="tel:+52-999-127-3284"><u>+52 999 127 3284</u></a>
+						</p>
+
+						<a href="https://wa.me/529991273284/?text=Me%20gustaría%20obtener%20más%20información%20de%20los%20departamentos%20de%20Amorada" target="_blank">
+							<img src="images/images-viten/WA-logo.png" width="80" height="80">
+						</a>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer end -->
+
+	</div>
+
+
+	<!-- Floating Contact / HB Form
+	============================================= -->
+	<div class="floating-contact-wrap">
+		<div class="floating-contact-btn shadow" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg">
+			<i class="floating-contact-icon btn-unactive icon-envelope21"></i>
+			<i class="floating-contact-icon btn-active icon-line-plus"></i>
+		</div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header" style="background-color: #273C4E;">		
+					<div class="floating-contact-heading dark p-4 rounded" >
+						<h3 class="mb-0 text-white">Contáctanos</h3>
+						<p class="mb-0">Nos pondremos en contacto contigo</p>
+					</div>
+					<button type="button" class="btn btn-sm text-white" style="background-color: #273C4E;" data-bs-dismiss="modal" aria-hidden="true"><b style="font-size: 22px;">X</b></button>
+				</div>
+				<!-- Esto es lo que pongo para que se vea en cualquier lugar del HTML-->
+				<div id="footerHSForm" style="padding: 5%;"></div>
+				<!-- FIN -->
+				<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+				<script type="text/javascript">
+					hbspt.forms.create({
+						region: "na1",
+						portalId: "7533651",
+						formId: "85cf773e-79ec-4ab7-a305-a9c4ded56545",
+						target: "#footerHSForm"
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	<!-- Floating Contact / HB Form end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up amoradaGoldGoToTop"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
+	<script src="js/functions.js"></script>
+
+
+	<!-- Custom Scripts
+	============================================= -->
+	<!--No deja entrar al UMGBar en Moviles-->
+	<script>
+		function hiddenOnMobile()	// Se llama en <body> con onload="hiddenOnMobile()" 
+		{
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+			{
+				document.getElementById("hideOnMobile").style.display = "none";
+			}
+		}
+	</script><!--Esconde Dialogos de Guardia en Moviles end-->
+
+
+
+</body>
+</html>

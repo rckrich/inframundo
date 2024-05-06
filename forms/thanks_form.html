@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    
+<head>
+
+    <title>DinoSuari - Contact Thanks</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rich G - RCK Games" />
+    <meta name="description" content="DinoSauri - Contact Thanks">
+    
+    <!-- Stylesheets
+	============================================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css" type="text/css" />
+
+</head>
+
+<body class="stretched">
+    
+    <div class="flex items-center min-h-screen" style="background-color:#000000;">
+
+        <!--
+        <video autoplay muted loop style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
+            <source src="Golf_Intro_Ball.mov">
+        </video>
+        -->
+        <div class="container mx-auto center"> <!-- style="position: fixed; padding-left: 180px; padding-bottom: 200px;"> -->
+            <video autoplay muted loop style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
+                <source src="AdobeStock_169068562.mov">
+
+            </video>
+
+            <div class="text-center" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 92%;">
+                <img src="DinoSauri_Colors.GIF" style="border-radius: 100px; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 100px; height: 100px;">       
+
+                <h1 class="my-3 text-3xl font-semibold" style="color: rgb(255, 255, 255); filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));"">          
+                    <!--Contact Us-->
+                    Recibimos tu Registro        
+                </h1>       
+
+                <p class="text-gray-400 dark:text-gray-400" style="padding-top: 350px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));"">       
+                    <!--Fill up the form below to send us a message.-->
+                    Pasa al Proshop de Provincia.
+                    <br>
+                    Paga la couta de inscripción y completa tu registro.
+                </p>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+  <script>
+        (function () {
+            "use strict";
+    /*
+    * Form Validation
+    */
+
+    // Fetch all the forms we want to apply custom validation styles to
+    const forms = document.querySelectorAll(".needs-validation");
+    const result = document.getElementById("result");
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+        "submit",
+        function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            form.querySelectorAll(":invalid")[0].focus();
+            } else {
+            /*
+            * Form Submission using fetch()
+            */
+
+            const formData = new FormData(form);
+            event.preventDefault();
+            event.stopPropagation();
+            const object = {};
+            formData.forEach((value, key) => {
+                object[key] = value;
+            });
+            const json = JSON.stringify(object);
+            result.innerHTML = "Porfavor esepere...";
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+                },
+                body: json
+            })
+                .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    //result.innerHTML = json.message;
+                    result.innerHTML = "Registro Recibido. Pasa al Proshop de Provincia para pagar y completar tu inscripción.";
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-green-500");
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-red-500");
+                }
+                })
+                .catch((error) => {
+                console.log(error);
+                result.innerHTML = "Algo salió mal, intentalo de nuevo.";
+                })
+                .then(function () {
+                form.reset();
+                form.classList.remove("was-validated");
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 5000);
+                });
+            }
+            form.classList.add("was-validated");
+        },
+        false
+        );
+    });
+    })();
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>

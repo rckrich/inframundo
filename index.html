@@ -2,98 +2,65 @@
 <html dir="ltr" lang="en-US">
 <head>
 
+
+	<!-- Google tag (gtag.js) Google Analitycs -->
+	<!--AGREGAR GOOGLE ANALITYCS-->
+
 	<title>Inframundo Digital Art Gallery</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="RCK Games" />
+    <meta name="author" content="Rich G - RCK Games" />
     <meta name="description" content="Inframundo Digital Art Gallery es un espacio virtual dedicado a exhibir y ofrecer arte digital de vanguardia.">
 
     <link rel="icon" href="Inframundo-Icon.png">
 
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@UMGbar" />
+	<meta name="twitter:card" content="summary" />
+    <!-- <meta name="twitter:site" content="@UMGbar" /> -->
     <meta name="twitter:title" content="Inframundo Digital Art Gallery" />
     <meta name="twitter:description" content="Inframundo Digital Art Gallery es un espacio virtual dedicado a exhibir y ofrecer arte digital de vanguardia." />
-    <meta name="twitter:image" content="CAMBIAR -> https://unicornmotorcyclegang.io/images/images-UMG/UMG-Image-Socials.png" />
+    <meta name="twitter:image" content="https://inframundo.io/images/images-Inframundo/Inframundo-Image-Socials.jpg" />
 
     <meta property="og:title" content="Inframundo Digital Art Gallery" />
     <meta property="og:description" content="Inframundo Digital Art Gallery es un espacio virtual dedicado a exhibir y ofrecer arte digital de vanguardia." />
     <meta property="og:type" content="website" />  
     <meta property="og:url" content="https://inframundo.io" />
-    <meta property="og:image" content="CAMBIAR -> https://unicornmotorcyclegang.io/images/images-UMG/UMG-Image-Socials.png" />
+    <meta property="og:image" content="https://inframundo.io/images/images-Inframundo/Inframundo-Image-Socials.jpg" />
 
 
-	<!-- Stylesheets
-	============================================= -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/custom.css" type="text/css" />
-	<link rel="stylesheet" href="css/custom-glitch.css" type="text/css" />
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
 
-	<!-- Floating -->
-	<style>
-		.floating-orb {
-		  animation: float 3s ease-in-out infinite;
-		}
-	
-		@keyframes float {
-		  0% {
-			transform: translateY(0);
-		  }
-		  50% {
-			transform: translateY(-15px);
-		  }
-		  100% {
-			transform: translateY(0);
-		  }
-		}
-	</style>
-	
-	<!-- Orb -->
-	<style>
-        .light-orb {
-			width: 100px;
-			height: 100px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 214, 214, 0), rgba(255, 255, 255, 0));
-            box-shadow: 0 0 100px rgb(255, 255, 255);
-            animation: brightness 2s ease-in-out infinite;  /*, float-orb 3s ease-in-out infinite;*/
-        }
+	<!-- Dark Style -->
+	<link rel="stylesheet" href="css/dark.css">
 
-        @keyframes brightness {
-            0% {
-                box-shadow: 0 0 100px rgb(255, 0, 0);
-                opacity: 1;
-            }
-            50% {
-                box-shadow: 0px 0px 30px rgb(255, 255, 255);
-                opacity: 1;
-            }
-			100% {
-                box-shadow: 0 0 100px rgb(255, 0, 0);
-                opacity: 1;
-            }
-        }
+	<!-- Bootstrap Style -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-        @keyframes float-orb {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-15px);
-            }
-        }
+	<!-- Animate Style -->
+	<link rel="stylesheet" href="css/animate.css">
 
-    </style>
-	
+	<!-- Magnific Popup Style -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/components/bs-switches.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="demos/gym/gym.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
 	<!-- Fire -->
 	<style>
         .flame {
@@ -150,273 +117,537 @@
         }
     </style>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	
-	<!-- AQUI agregar el tag de Google Analytics -->
-	
-	<!-- Global site tag (gtag.js) - Google Analytics end-->
-	
-</head>
 
+</head>
 
 <body class="stretched" style="background-color: black;">
 
-
-	<!-- The Main Wrapper
+	<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix" style="background-color: black;">
+	<div id="wrapper">
 
-
-		<!-- Site Content
+		<!-- Header
 		============================================= -->
-		<section id="content" style="background-color: rgb(0, 0, 0);">
-			<div class="content-wrap">
+		<header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
+			<div id="header-wrap">
 				<div class="container">
-
-					<div  style="margin: -85px;">
-						<img style="width: 100%; height: 100%; position: relative; top: 0; left: 0;" src="images/images-Inframundo/Portal_wide.jpg">					
-						<!--<img class="floating-orb" style="width: 100%; position: absolute; top: 0px; left: 0;" src="images/images-Inframundo/Portal_raro.png" alt="Bar Entrance">	-->				
-						<!--<div class="light-orb floating-orb" style="width: 5vw; height: 5vw; position: absolute; top: 47.5%; left: 46.5%;"></div>	-->
-						<div class="fire-container" style="width: 6svw; height: 6vw; position: absolute; top: 46%; left: 47%;">
-							<div class="flame"></div>
-							<div class="flame"></div>
-							<div class="flame"></div>
-						</div>	
-					</div>
-
-				</div>
-			</div>
-		</section><!-- Site Content end -->
+					<div class="header-row justify-content-lg-between">
 
 
-		<section id="content" style="background-color: rgb(0, 0, 0);">
-			<div class="content-wrap">
-				<div class="container">			
-					<!--
-					<div style="border: 3px dashed #1c87c900; position: absolute; width: 45%; top: 20%; left: 38%;">
-
-						<button id="SpeechBubble" onclick="clickMeEvent(jjj)" style="z-index: 1; visibility: hidden; position: absolute; max-width: 60%; top: -5vw; left: -15vw; background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0);">
-							<img src="images/images-UMG/SpeechBubble-LeftTalk.png" alt="Speech Bubble">
-							<span class="rckEntranceGuardFontSize" id="jjj" style="border: 3px dashed #1c87c900; position: absolute; padding-left: 10%; padding-right: 10%; padding-top: 5%; top: 0px; left: 0px; text-align: left; flex-wrap: wrap; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">...</span>
-						</button>
-
-						<button id="OpenSpeechBubble" onclick="clickMeEvent(this.style.visibility = 'hidden', SpeechBubble.style.visibility = 'visible')" style="z-index: 1; position: absolute; max-width: 20%; top: 10%; left: 0%; background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); ">
-							<img style="position: relative;" src="images/images-UMG/SpeechBubble-LeftTalk.png" alt="Speech Bubble">
-							<span style="border: 3px dashed #1c87c900; position: absolute; bottom: 25%; left: 30%; text-align: center; font-size:2vw;">...</span>
-						</button>
-
-						<img style="position: relative; max-width: 60%;" src="images/images-UMG/Garrotero_1024.png" alt="Bar Entrance Guard">
-					</div>
-					-->
-
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-
-
-					<div style="margin: auto;">
-						<div class="col-sm-4 center" style="margin: auto; background-color: rgb(127, 255, 212); object-fit:cover; height:100%; width:100%; max-width: 500px; border-radius: 10px;">
-							<p class="col-sm">
-								<h2 style="color: rgb(0, 0, 0); font-size: x-large; font-weight: bold;"><br> Are you of legal age?</h2>
-							</p>
-							<a href="https://unicornmotorcyclegang.io/main" class="button button-border button-rounded button-fill fill-from-right button-black">
-								<span>Yes</span>
-							</a>
-							<a href="#modalCannotEnter" data-lightbox="inline" class="button button-border button-rounded button-fill fill-from-right button-black">
-								<span>No</span>
-							</a>
-							<br>
-							<br>
-						</div>
-					</div>
-
-
-					<br>
-					<br>
-
-
-					<!--Audio Play Pause-->
-					<div style="position: fixed; background-color: rgba(51, 51, 51, 0); left: 15px; top:15px;">
-						
+					
+						<!-- Logo
+						============================================= -->
 						<!--
-						<audio loop id="myAudioPlayer">
-							<source src="audio/Night Club - Main Version.mp3" type="audio/mp3">
-						  Your browser does not support the audio element.
-						</audio>
+						<div id="logo" class="me-lg-0 border-end-0">
+							<a href="demo-gym.html">
+								<img class="logo-default" srcset="demos/gym/images/logo.png, demos/gym/images/logo@2x.png 2x" src="demos/gym/images/logo@2x.png" alt="Canvas Logo">
+								<img class="logo-dark" srcset="demos/gym/images/logo-dark.png, demos/gym/images/logo-dark@2x.png 2x" src="demos/gym/images/logo-dark@2x.png" alt="Canvas Logo">
+							</a>
+						</div>
+						-->
+						<!-- #logo end -->
 
-						<button id="btnPlayPauseMusicRCK" onclick="playPauseAudio()" class="gradient-purple-blue" style="display: block; border: none; padding: 10px; text-align: center; display: inline-block; margin: 5px 5px; cursor: pointer; border-radius: 50%; width: 100%; height: 100%;">
-							<img id="imagePlayPauseMusicRCK" style="max-width: 15px; max-height: 15px;" src="images/images-UMG/IconPlay.png">
-						</button>
+						<!--
+						<div class="header-misc">
+						-->
+							<!-- Top Search
+							============================================= -->
+							<!--
+							<div id="top-search" class="header-misc-icon">
+								<a href="#" id="top-search-trigger"><i class="uil uil-search"></i><i class="bi-x-lg"></i></a>
+							</div>
+						-->
+							<!-- #top-search end -->
+						<!--
+						</div>
 						-->
 
-					</div><!--Audio Play Pause end-->
-
-
-					<!-- Modal Cannot Enter 
-					============================================= -->
-					<div class="modal1 mfp-hide" id="modalCannotEnter">
-						<div class="block mx-auto" style="background-image: url('images/images-UMG/Modal-ComingSoon-BG-2.png'); 
-							background-repeat: no-repeat; background-size: cover; max-width: 400px;">
-							<div class="feature-box fbox-center fbox-effect fbox-lg border-bottom-0 mb-0" style="padding: 35px;">
-								<div class="fbox-content">
-									<h3 style="color: white; font-size: x-large;">Sorry<span class="subtitle" style="color: white; font-size: medium;">You cannot enter. You need to be of legal age.</span></h3>
-								</div>
-							</div>
-							<div class="section center m-0" style="padding: 10px; background-color:azure">
-								<a class="button button-border button-rounded button-fill button-black button-small" onClick="$.magnificPopup.close();"><span>Exit</span></a>
-							</div>
+						<!--
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
 						</div>
-					</div><!-- Modal Cannot Enter end -->
-				
+						-->
+
+						<!-- Primary Navigation
+						============================================= -->
+						<!--
+						<nav class="primary-menu">
+
+							<ul class="menu-container border-end-0">
+								<li class="menu-item current"><a class="menu-link" href="index.html"><div>Home</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="index.html"><div>About</div></a>
+									<ul class="sub-menu-container" data-class="up-lg:not-dark">
+										<li class="current menu-item"><a class="menu-link" href="index.html"><div>Home</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="index.html"><div>About</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="index.html"><div>Classes</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="index.html"><div>Gallery</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="index.html"><div>Pricing</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="index.html"><div>Contact</div></a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a class="menu-link" href="index.html"><div>Classes</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="index.html"><div>Gallery</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="index.html"><div>Pricing</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="index.html"><div>Contact</div></a></li>
+							</ul>
+
+						</nav>
+
+						<form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+						</form>
+						-->
+
+					
+					</div>
 				</div>
 			</div>
-		</section><!-- Site Content end -->
+			<div class="header-wrap-clone"></div>
+		</header>
+		<!-- Header end -->
 
-		
+
+		<!-- Page Title
+		============================================= -->
+		<section id="slider" class="slider-element swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-loop="true">
+			<div class="slider-inner" style="border-bottom: solid; border-color:rgb(255, 255, 255); border-width: 2px;">
+
+				<div class="swiper swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption slider-caption-center">
+									<!--
+									<div>
+										<h2>
+											<img style="width: 50%;" src="images/images-Inframundo/Inframundo-Logotipo-Blanco.png" alt="DinoSauri Logo">
+										</h2>
+										
+										<p class="categories-lists">STABLEFORD PAREJAS</p>
+										<a class="menu-link button button-rounded button-large text-transform-none mt-4 buttonRed" style="background-color: #ff0000;" href="#registro" data-scrollto="#registro">Inscríbete</a>
+									</div>
+									-->
+								</div>
+							</div>
+							<div class="video-wrap" style="background-color: black;">
+								<img style="object-fit:cover; height:100%; width:100%;" src="images/images-Inframundo/Portal_wide.jpg" playsinline loop muted autoplay >
+								<div class="fire-container" style="width: 6svw; height: 6vw; position: absolute; top: 46%; left: 47%;">
+									<div class="flame"></div>
+									<div class="flame"></div>
+									<div class="flame"></div>
+								</div>	
+								<!--<div class="yt-bg-player customjs" data-quality="hd1080" data-start="19" data-volume="80" data-stop="52" data-video="https://youtu.be/e885U_anyWU"></div>-->
+								<!--<div class="video-overlay" style="background: rgba(0,0,0,0.4);"></div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider Mouse Icon
+				============================================= -->
+				<a href="#" class="scroll-down d-none d-lg-block" data-scrollto="#content" data-offset="80">
+					<!-- <span class="scroll-mouse"><span class="scroll-wheel"></span></span> -->
+				</a>
+
+			</div>
+		</section>
+		<!-- PageTitle end -->
+
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap pt-0">
+
+				<!-- Logo
+				============================================= -->
+				<div class="section dark m-0" style="background-color: rgb(0, 0, 0);">
+					<div class="container">
+						<div class="center">
+							<img data-animate="fadeInUp" style="width: 50%;" src="images/images-Inframundo/Inframundo-Logotipo-Blanco.png">
+							<br>
+							<br>
+							<p data-animate="fadeInUp" data-delay="200" style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif;">- Digital Art Gallery -</p>
+							<img data-animate="fadeInUp" style="width: 10%;" src="images/images-Inframundo/Inframundo-Icono-Blanco.png">
+						</div>	
+					</div>
+				</div>
+				<!-- Logo end -->
+
+				<!-- About Us
+				============================================= -->
+				<div class="section dark m-0" style="background-color: rgb(15, 15, 15);">
+					<div class="container">
+						<h2>
+							<span style="color: white; font-size: 50px;">Nosotros.</span>		
+						</h2>
+
+						<div class="container">
+							<p style="color: rgb(230, 230, 230); text-align:left;">
+								<span style="color: rgb(200, 200, 200); font-size: x-large; font-weight: bold;">Inframundo</span> <span>
+									Digital Art Gallery es un espacio virtual pionero dedicado a exhibir y vender arte digital de vanguardia en formato de NFTs. Nuestra galería es una puerta al inframundo de la creatividad, donde convergen artistas consagrados y emergentes para mostrar sus creaciones digitales únicas. Ofrecemos a coleccionistas y entusiastas del arte la oportunidad de poseer piezas digitales exclusivas, cada una con un registro de propiedad seguro y verificable en la blockchain. Inframundo está a la vanguardia de la revolución del arte digital, fomentando una comunidad que valora la innovación, autenticidad y exploración artística.
+								</span>
+							</p>									
+						</div>
+					</div>
+				</div>
+				<!-- About Us end -->
+
+
+				<!-- Parallax 1
+				============================================= -->
+				<div class="section bg-transparent py-0 mt-0 ">
+					<div class="parallax scroll-detect vh-50 align-items-center justify-content-center d-flex">
+						<!--<h3 class="display-4 fw-bold">Parallax Background</h3>-->
+						<img src="images/images-Inframundo/Inframundo-parallax-1.jpg" alt="Image" class="parallax-bg">
+					</div>
+				</div>
+				<!-- Parallax 1 end -->
+
+				<!-- Proyectos
+				============================================= -->
+				<div class="section dark m-0" style="background-color: rgb(255, 255, 255);">
+					<div class="container">
+						<h2>
+							<span style="color: rgb(30, 30, 30); font-size: 50px;">Proyectos.</span>
+						</h2>
+						<div class="container">
+							<p style="color: rgb(230, 230, 230); text-align:left;">
+								<span style="color: rgb(75, 75, 75); font-size: x-large; font-weight: bold;">
+									Descubre
+								</span> 
+								<span style="color: rgb(75, 75, 75);">
+									nuestra colección de proyectos únicos que reflejan el espíritu innovador y creativo de Inframundo Digital Art Gallery. Desde piezas conceptuales hasta obras maestras de arte digital en formato NFT, cada proyecto es una ventana hacia un mundo de imaginación y talento. Sumérgete en un universo donde el arte trasciende lo físico, conectando a artistas y coleccionistas a través de experiencias visuales sin límites.
+								</span>
+							</p>									
+						</div>
+					</div>
+				</div>
+
+				<!-- Datoer
+				============================================= -->
+				<div class="section m-0" style="background: url('images/images-Inframundo/Datoer/Datoer-BG.jpg') center bottom no-repeat; background-size: cover; padding: 80px 0 180px; border-bottom: solid; border-color:rgb(255, 255, 255); border-width: 2px;">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-7">
+								<div class="emphasis-title mb-4">
+									<span class="before-heading font-secondary" style="color: white; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));">PROYECTO</span>
+									<h2 style="font-size: 46px; color: white; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" class="font-body">"Inframundo desde la voz de la calle"</h2>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-7 center">
+								<div class="emphasis-title mb-4">
+									<img src="images/images-Inframundo/Datoer/Datoer_Logo.png" style="width: 200px" alt="Image">		
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-7">
+								<div class="emphasis-title mb-4">
+									<p style="color: white; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" class="lead">Artista urbano desde 2001. <br> "Mi trabajo se enfoca en la creación de murales sobre la cultura yucateca con la intención de conservar parte de nuestra riqueza cultural"</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<h2 class="center">
+						<span style="color: white; font-size: 40px;">PRÓXIMAENTE</span>		
+					</h2>
+				</div>
+				<!-- Datoer end -->
+				<!-- Proyectos end -->
+
+
+				<!-- FAQ
+				============================================= -->
+				<div class="section dark m-0" style="background-color: rgb(0, 0, 0);">
+					<div id="faq" class="container">	
+						<div>
+							<h2>
+								<span style="color: white; font-size: 60px;">FAQ.</span>
+							</h2>
+							<div class="col-12">
+								<div class="row justify-content-between col-mb-50">
+									<div class="col-md-5">
+										<h3>inframundo.io</h3>
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Qué es inframundo.io?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												Inframundo.io es una Galería de Arte Digital, es un espacio virtual pionero dedicado a exhibir y vender arte digital de vanguardia en formato de NFTs. 
+												<br>
+												<br>
+												Nuestra galería es una puerta al inframundo de la creatividad, donde convergen artistas consagrados y emergentes para mostrar sus creaciones digitales únicas. Ofrecemos a coleccionistas y entusiastas del arte la oportunidad de poseer piezas digitales exclusivas, cada una con un registro de propiedad seguro y verificable en la blockchain.
+											</div>
+										</div>
+	
+										<div class="line my-3"></div>
+	
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Por quien esta respaldado inframundo.io?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												Inframundo.io está respaldado por una galería de arte llamada Arte1010 (<a href='http://arte1010.com' style='color: aquamarine;' target='_blank' rel='noopener noreferrer'>http://arte1010.com</a>) y una empresa de desarrollo de software llamada RCK (<a href='https://rckgames.com' style='color: aquamarine;' target='_blank' rel='noopener noreferrer'>https://rckgames.com</a>). 
+												<br>
+												<br>
+												Este respaldo combina la experiencia creativa y artística de Arte1010 con la innovación tecnológica de RCK, brindando una plataforma sólida y confiable para ofrecer arte digital de vanguardia.
+											</div>
+										</div>
+
+										<div class="line my-3"></div>
+	
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Cada cuánto lanzan un proyecto nuevo?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												No hay un calendario específico para nuevos proyectos. La galería lanza proyectos únicamente cuando considera que es pertinente y que el arte propuesto para convertirse en NFT tiene un valor artístico significativo, convirtiéndolo en un producto NFT valioso. Mantente al tanto de nuestras noticias para saber cuándo lanzaremos un nuevo proyecto. Podría ser uno que tenga un gran valor artístico para ti y muchos otros.
+											</div>
+										</div>
+
+										<div class="line my-3"></div>
+	
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Puedo tener un proyecto en colaboración con inframundo.io?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												Agradecemos tu interés en colaborar con inframundo.io. En este momento no estamos gestionando colaboraciones externas, pero valoramos tu iniciativa y te animamos a seguir disfrutando de nuestra galería. Estaremos encantados de mantenerte informado sobre cualquier oportunidad futura.
+											</div>
+										</div>
+
+									</div>
+	
+									<div class="col-md-5">
+										<h3>Blockchain</h3>
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Qué es la Blockchain?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												La Blockchain es una base de datos pública que se actualiza y comparte entre muchas computadoras dentro una red. El término 'bloque' se refiere a la información almacenada en grupos consecutivos llamados 'bloques'. Por ejemplo, si envías ETH a otra persona, los datos de la transacción se añaden a un bloque para que sea exitosa.
+												<br>
+												<br>
+												La palabra 'cadena' se refiere a que cada bloque se vincula criptográficamente a su bloque anterior, formando una cadena. Los datos en un bloque no pueden cambiar sin modificar todos los bloques siguientes, lo que requeriría el consenso de toda la red, por lo tanto es imposible de modificar la información."
+											</div>
+										</div>
+	
+										<div class="line my-3"></div>
+	
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Qué es un Non Fungible Token?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												Los Non Fungible Tokens son tokens que podemos usar para representar la propiedad de artículos únicos. Nos permiten tokenizar cosas como arte, coleccionables e incluso bienes raíces. En el caso de inframundo.io, recibirás arte digital coleccionable.
+												<br>
+												<br>
+												Los NFTs solo pueden tener un propietario oficial a la vez, y están asegurados por la blockchain de Ethereum. Nadie puede modificar el registro de propiedad ni copiar/pegar un nuevo NFT para crearlo."
+											</div>
+										</div>
+
+										<div class="line my-3"></div>
+	
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Qué es una Ethereum Wallet?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												Las Wallets de Ethereum son aplicaciones que te permiten interactuar con tu cuenta de Ethereum. Piénsalo como una aplicación de banca en línea, pero sin el banco.
+												<br>
+												Tu billetera te permite ver tu saldo, enviar transacciones y conectarte a aplicaciones. ¿Quieres aprender más? Visita <a href='https://ethereum.org' style='color: aquamarine;' target='_blank' rel='noopener noreferrer'>ethereum.org</a>.
+											</div>
+										</div>
+
+										<div class="line my-3"></div>
+	
+										<div class="toggle mb-0">
+											<div class="toggle-header">
+												<div class="toggle-icon">
+													<i class="toggle-closed uil uil-plus"></i>
+													<i class="toggle-open uil uil-minus"></i>
+												</div>
+												<div class="toggle-title">
+													¿Qué Wallets son compatibles con los proyectos de inframundo.io?
+												</div>
+											</div>
+											<div class="toggle-content toggle-content-padding" style="color: rgb(205, 205, 205);">
+												Metamask es la Wallet compatible con el sitio web de inframundo.io
+												<br>
+												Metamask está disponible como una extensión para navegadores y una aplicación móvil. MetaMask te proporciona un almacén de claves, inicio de sesión seguro, billetera de tokens e intercambio de tokens. Todo lo que necesitas para gestionar tus activos digitales. ¿Quieres saber más? Visita <a href='https://metamask.io' style='color: aquamarine;' target='_blank' rel='noopener noreferrer'>metamask.io</a>.</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<!--FAQs end-->
+				
+
+			<!-- START FORM -->	
+			<iframe id="registro" title="Contact Form" width="300" height="800"
+			src="forms/FormConFondo.html">
+			</iframe>
+			<!-- <iframe src="Unity/UMGBar_Game/index.html" width="700" height="700" title="UMG Bar Game"></iframe> -->
+			<!-- END FORM -->
+
+
+			</div>
+		</section><!-- #content end -->
+
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
-			<div class="container">
-		
-				<!-- Add something cool later, maybe twitter preview posts -->
+		<footer id="footer" class="border-0" style="background-color:red; background-size: cover;">
 
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<!--
+				<div class="footer-widgets-wrap">
+
+					<div class="row widget">
+
+						<div class="text-start col-sm-4">
+							<h4 style="font-size: 22px;">Book your Free Trial</h4>
+							<form action="#" class="row mb-1" style="max-width: 300px;">
+								<div class="col-12 form-group">
+									<label for="template-footer-form-email" class="text-capitalize fw-semibold">Username or Email</label>
+									<input type="email" id="template-footer-form-email" name="template-footer-form-email" value="" class="form-control not-dark">
+								</div>
+								<div class="col-12 form-group">
+									<label for="template-footer-form-password" class="text-capitalize fw-semibold">Choose Password</label>
+									<input type="password" id="template-footer-form-password" name="template-footer-form-password" value="" class="form-control not-dark">
+								</div>
+								<div class="col-12 form-group mb-0">
+									<button type="submit" class="fw-normal text-capitalize button button-border button-dark button-circle m-0" value="submit">Register Now</button>
+								</div>
+							</form>
+							<p class="mb-0"><small class="fw-light"><em>* We keep your information private</em></small></p>
+						</div>
+
+						<div class="text-start col-sm-4">
+							<h4 style="font-size: 22px;">Location:</h4>
+							<address>
+								795 Folsom Ave, Suite 600<br>
+								San Francisco, CA 94107<br>
+							</address>
+							<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
+							<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
+							<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com<br>
+
+							<div class="d-flex mt-4">
+								<a href="#" class="social-icon si-small rounded-circle text-white bg-facebook mb-0">
+									<i class="fa-brands fa-facebook-f"></i>
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+								<a href="#" class="social-icon si-small rounded-circle text-white bg-x-twitter mb-0">
+									<i class="fa-brands fa-x-twitter"></i>
+									<i class="fa-brands fa-x-twitter"></i>
+								</a>
+								<a href="#" class="social-icon si-small rounded-circle text-white bg-instagram mb-0">
+									<i class="fa-brands fa-instagram"></i>
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+								<a href="#" class="social-icon si-small rounded-circle text-white bg-github mb-0">
+									<i class="fa-brands fa-github2"></i>
+									<i class="fa-brands fa-github2"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				-->
 			</div>
 
 			<!-- Copyrights
 			============================================= -->
-			<div id="copyrights">
+			<div id="copyrights" class="text-center" style="background-color: #FFF;">
+
 				<div class="container">
-					<div class="text-center">
-						<div class="text-center">
-							<a href="https://discord.gg/6mHdurd4UX" class="social-icon inline-block si-borderless mb-0 si-yahoo" target="_blank" rel="noopener noreferrer">
-								<i class="icon-discord"></i>
-								<i class="icon-discord"></i>
-							</a>
 
-							<a href="https://twitter.com/UMGbar" class="social-icon inline-block si-borderless mb-0 si-twitter" target="_blank" rel="noopener noreferrer">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-						</div>
-
-						<p>
-							Unicorn Motorcycle Gang
-							<br>
-							Copyrights &copy; 2022 All Rights Reserved
-						</p>
-
-						<img src="images/images-UMG/UMG-Logo-White.png" alt="UMG Logo" class="mb-4" style="max-width: 120px;">						
-						
+					<div>
+						<img style="background-color: black; width: 30px; height: 30px; border-radius: 50px;" src="images/images-Inframundo/Inframundo-Icono-Blanco.png" alt="DinoSauri Logo">
+						<br>
+						Copyrights &copy; 2024 <br>All Rights Reserved by Inframundo.io<br>
+						<!--<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>-->
 						<br>
 						<br>
-
 					</div>
+
 				</div>
-			</div>
 
-		</footer>
+			</div><!-- #copyrights end -->
 
-	</div>
+		</footer><!-- #footer end -->
 
-
+	</div><!-- #wrapper end -->
 
 	<!-- Go To Top
 	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+	<div id="gotoTop" class="uil uil-angle-up"></div>
 
 	<!-- JavaScripts
 	============================================= -->
-	<script src="js/jquery.js"></script>
 	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
 
-	<!-- Footer Scripts
-	============================================= -->
-	<script src="js/functions.js"></script>
+	<!-- Image Change JS -->
+	<script src="js/components/event.move.js"></script>
+	<script src="js/components/image-changer.js"></script>
 
-	<!-- Custom Scripts
-	============================================= -->
-	<!--Dialogos de Guardia-->
-	<script type="application/javascript">	
-		function clickMeEvent(obj) 
-		{
-			if (obj.innerHTML == "...") 
-			{
-				obj.innerHTML = "Stop right there";
-				return;
-			}
-			if (obj.innerHTML == "Stop right there") 
-			{
-				obj.innerHTML = "You can't enter unless you are old enough";  
-				return; 
-			}
-			if (obj.innerHTML == "You can't enter unless you are old enough") 
-			{
-				obj.innerHTML = "Answer the question below to gain access";  
-				return; 
-			}
-			if (obj.innerHTML == "Answer the question below to gain access") 
-			{
-				obj.innerHTML = "We are serious";  
-				return;
-			}
-			if (obj.innerHTML == "We are serious") 
-			{
-				obj.innerHTML = "This project is targeted at young adults";  
-				return; 
-			}
-			if (obj.innerHTML == "This project is targeted at young adults") 
-			{
-				obj.innerHTML = "You better not lie";  
-				return;	
-			}
-			if (obj.innerHTML == "You better not lie") 
-			{
-				obj.innerHTML = "...";  
-				//obj.style.display = "none";
-				document.getElementById("SpeechBubble").style.visibility = "hidden";
-				document.getElementById("OpenSpeechBubble").style.visibility = "visible";
-
-				document.getElementById("SpeechBubbleMobile").style.visibility = "hidden";
-				document.getElementById("OpenSpeechBubbleMobile").style.visibility = "visible";
-
-				return;
-			}
-		}
-	</script><!--Dialogos de Guardia end-->
-
-	<!--Muestra Dialogos de Guardia en Moviles-->
 	<script>
-		function showOnMobile()	// Se llama en <body> con onload="showOnMobile()" ahorita no se esta usando
-		{
-			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
-			{
-				document.getElementById("SpeechBubbleMobile").style.display = "block";
-				document.getElementById("OpenSpeechBubbleMobile").style.display = "block";
-			}
-		}
-	</script><!--Muestra Dialogos de Guardia en Moviles end-->
-
-	<!--Btn Play Pause-->
-	<script>
-		var audioPlayer = document.getElementById("myAudioPlayer"); 
-		var imagePlayPause = document.getElementById("imagePlayPauseMusicRCK"); 
-
-
-		function playPauseAudio(){
-			if(imagePlayPause.getAttribute('src') === "images/images-UMG/IconPlay.png")  
-			{
-				audioPlayer.play(); 
-				imagePlayPause.src = "images/images-UMG/IconPause.png"
-			} 
-			else
-			{
-				audioPlayer.pause();
-				imagePlayPause.src = "images/images-UMG/IconPlay.png"
-			}
-		}
-	</script><!--Btn Play Pause end-->
+		jQuery(window).on( 'load', function(){
+			jQuery(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+		});
+	</script>
 
 </body>
 </html>
