@@ -1,0 +1,145 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Black';
+    src: url('../datoer/assets/fonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../datoer/assets/fonts/Calibri/CALIBRI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dark-bg {
+    background-color: black;
+}
+
+.grey-bg {
+    background-color: #1A1A1A !important;
+}
+
+.grey-2-bg {
+    background-color: #262626 !important;
+}
+
+.button-more {
+    --bs-bg-opacity: 1;
+    background: rgb(254,120,27);
+    background: linear-gradient(90deg, rgba(254,120,27,1) 0%, rgba(254,32,151,1) 100%);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+    font-weight: bold;
+    font-size: 26px;
+    --cnvs-btn-padding-x: 4.25rem;
+    --cnvs-btn-padding-y: 1.025rem;
+    --cnvs-btn-fontsize: 1.25rem;
+}
+
+.logo-img {
+    width: 300px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Black';
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-family: 'Calibri';
+}
+
+.text-container {
+    border-bottom: 3px solid #373737;
+}
+
+.text-normal {
+    font-family: 'Calibri';
+    font-size: 24px;
+}
+
+.content-wrap p {
+    line-height: 1.85rem !important;
+}
+
+.section-about {
+    background: url('../datoer/assets/images/IMG_Banner.png') center bottom no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+
+
+
+/* EXPANDING CARDS
+------------------------------ */
+
+.block-expand-categories h1,
+.block-expand-categories h2,
+.block-expand-categories h3 { font-family: Playfair Display, serif !important; }
+
+.block-expand-categories .expand-category {
+    --height: 50vh;
+    --responsive-height: 60px;
+    --hover-flex: 10;
+
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 10px 0;
+    min-height: var(--responsive-height);
+    cursor: pointer;
+}
+
+.block-expand-categories .expand-category h4 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+/* Larger Device */
+@media (min-width: 992px) {
+
+    .block-expand-categories .expand-category {
+        height: var(--height);
+        flex: 1;
+        margin: 0 10px;
+        transition: flex 1s ease;
+        -webkit-backface-visibility: hidden;
+        transform: translate3d(0,0,0);
+    }
+
+    .block-expand-categories:not(.on-click) .expand-category:hover,
+    .block-expand-categories.on-click .expand-category.active { flex: var(--hover-flex); }
+
+    .block-expand-categories .expand-category h4 {
+        opacity: 1;
+        top: auto;
+        bottom: 10px;
+        transform: none;
+        transition: opacity .4s ease;
+    }
+
+    .block-expand-categories:hover .expand-category:not(.active):not(:hover) h4,
+    .block-expand-categories.on-click .expand-category:not(.active) h4 { opacity: 0; }
+
+}
+
+}
