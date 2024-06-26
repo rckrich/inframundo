@@ -85,6 +85,21 @@
 }
 
 
+@media (max-width: 600px) {
+
+    .section-title {
+        font-size: 35px !important;
+    }
+
+    .text-normal {
+        font-size: 18px;
+    }
+
+    .px-6 {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+}
 
 
 /* EXPANDING CARDS
@@ -147,3 +162,4 @@
 }
 
 }
+
