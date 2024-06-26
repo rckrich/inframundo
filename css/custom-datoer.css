@@ -31,7 +31,8 @@
     background-color: #262626 !important;
 }
 
-.button-more {
+.button-more,
+.button-link {
     --bs-bg-opacity: 1;
     background: rgb(254,120,27);
     background: linear-gradient(90deg, rgba(254,120,27,1) 0%, rgba(254,32,151,1) 100%);
@@ -98,6 +99,15 @@
     .px-6 {
         padding-right: 1rem !important;
         padding-left: 1rem !important;
+    }
+
+    .button-more {
+        font-size: 18px;
+        width: 280px !important;
+    }
+
+    .button-link {
+        font-size: 18px;
     }
 }
 
