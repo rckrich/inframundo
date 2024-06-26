@@ -40,7 +40,7 @@
     font-family: 'Calibri';
     font-weight: bold;
     font-size: 26px;
-    --cnvs-btn-padding-x: 4.25rem;
+    --cnvs-btn-padding-x: 5rem;
     --cnvs-btn-padding-y: 1.025rem;
     --cnvs-btn-fontsize: 1.25rem;
 }
@@ -75,7 +75,7 @@
 }
 
 .section-about {
-    background: url('../datoer/assets/images/IMG_Banner.png') center bottom no-repeat;
+    background: url('../datoer/assets/images/IMG_Banner.webp') center bottom no-repeat;
     background-size: cover;
     padding: 120px 0;
 }
