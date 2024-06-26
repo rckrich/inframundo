@@ -103,10 +103,14 @@
 
     .button-more {
         font-size: 18px;
-        width: 280px !important;
+        --cnvs-btn-padding-x: 3.5rem;
+        --cnvs-btn-padding-y: 1rem;
+        width: 230px !important;
     }
 
     .button-link {
+        --cnvs-btn-padding-x: 3.5rem;
+        --cnvs-btn-padding-y: 1rem;
         font-size: 18px;
     }
 }
