@@ -69,6 +69,13 @@
     text-transform: uppercase;
 }
 
+.section-title-2 {
+    font-family: 'Black';
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
 .section-subtitle {
     font-family: 'Calibri';
 }
@@ -97,6 +104,10 @@
 
     .section-title {
         font-size: 35px !important;
+    }
+
+    .section-title-2 {
+        font-size: 25px !important;
     }
 
     .text-normal {
