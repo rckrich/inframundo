@@ -33,9 +33,9 @@
 }
 
 @media (max-width: 650px) {
-    .hideBGImageOnMobile 
+    .hideBGImageOnMobile
     {
-        background-image: none !important; 
+        background-image: none !important;
     }
 }
 
@@ -45,7 +45,7 @@
     }
 
     .rckHeigthWidth-1{
-      height: 50%; 
+      height: 50%;
       width: 50%;
     }
 
@@ -64,7 +64,7 @@
     }
 
     .rckHeigthWidth-1{
-      height: 50%; 
+      height: 50%;
       width: 50%;
     }
 
@@ -90,22 +90,22 @@
   .rckFontSizeTitle {
     font-size: 70px !important;
   }
-    
+
   .rckFontSize {
     font-size: 28px !important;
   }
-  
+
   .rckHeigthWidth-1{
-    height: 50%; 
+    height: 50%;
     width: 50%;
   }
 
-    
+
   .rckMinVH{
     min-height: 100vh !important;
   }
 }
-  
+
 @media screen and (max-width: 1000px) {
   .rckFontSizeTitle {
     font-size: 70px !important;
@@ -116,7 +116,7 @@
   }
 
     .rckHeigthWidth-1{
-      height: 75%; 
+      height: 75%;
       width: 75%;
     }
 
@@ -143,7 +143,7 @@
     }
 
     .rckHeigthWidth-1{
-      height: 100%; 
+      height: 100%;
       width: 100%;
     }
 
@@ -153,13 +153,13 @@
 }
 
 a.translationButton{
-  color: rgb(255, 255, 255); 
-  padding: 0 10px; 
+  color: rgb(255, 255, 255);
+  padding: 0 10px;
   font-size: 12px;
 }
 
 a.translationButton:hover{
-  color: aquamarine !important; 
+  color: aquamarine !important;
 }
 
 a.translationButtonActive{
@@ -168,19 +168,19 @@ a.translationButtonActive{
 }
 
 a.greenHover:hover{
-  color: #34975C !important; 
+  color: #34975C !important;
 }
 
 a.whiteHover:hover{
-  color: #ffffff !important; 
+  color: #ffffff !important;
 }
 
 a.amoradaLinkHover{
-  color: #273C4E !important; 
+  color: #273C4E !important;
 }
 
 a.amoradaLinkHover:hover{
-  color: #AEB09C !important; 
+  color: #AEB09C !important;
 }
 
 a.grayLink{
@@ -188,7 +188,7 @@ a.grayLink{
 }
 
 a.amoradaBlue{
-  background-color: #273C4E !important; 
+  background-color: #273C4E !important;
 }
 
 a.amoradaBlue:hover{
@@ -196,7 +196,7 @@ a.amoradaBlue:hover{
 }
 
 a.amoradaGold{
-  background-color: #AEB09C !important; 
+  background-color: #AEB09C !important;
 }
 
 a.amoradaGold:hover{
@@ -204,7 +204,7 @@ a.amoradaGold:hover{
 }
 
 a.amoradaSkin{
-  background-color: #E0C1AE !important; 
+  background-color: #E0C1AE !important;
 }
 
 a.amoradaSkin:hover{
@@ -212,7 +212,7 @@ a.amoradaSkin:hover{
 }
 
 a.buttonRed{
-  background-color: red !important; 
+  background-color: red !important;
 }
 
 a.buttonRed:hover{
@@ -220,7 +220,7 @@ a.buttonRed:hover{
 }
 
 .amoradaBlue{
-  color: #273C4E !important; 
+  color: #273C4E !important;
 }
 
 .amoradaGoldGoToTop:hover{
@@ -228,7 +228,7 @@ a.buttonRed:hover{
 }
 
 .amoradaGold{
-  color: #AEB09C !important; 
+  color: #AEB09C !important;
 }
 
 div.scrollmenu {
@@ -237,7 +237,7 @@ div.scrollmenu {
 }
 
 div.amoradaBlue{
-  background-color: #273C4E !important; 
+  background-color: #273C4E !important;
 }
 
 div.amoradaBlue:hover{
@@ -287,4 +287,6 @@ div.amoradaBlue:hover{
   color: #D45555;
   border-color: #D45555;
 }
+
+
 
