@@ -26,36 +26,26 @@
 	<meta property="og:url" content="https://inframundo.io" />
 	<meta property="og:image" content="https://inframundo.io/images/images-Inframundo/Inframundo-Image-Socials.jpg" />
 
-
-	<!-- Font Imports -->
+	<!-- Bootstrap Style -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<!-- Core Style -->
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="style.css">
 
 	<!-- Dark Style -->
-	<link rel="stylesheet" href="../css/dark.css">
-
-	<!-- Bootstrap Style -->
-	<link rel="stylesheet" href="../css/bootstrap.css">
-
-	<!-- Animate Style -->
-	<link rel="stylesheet" href="../css/animate.css">
-
-	<!-- Magnific Popup Style -->
-	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<link rel="stylesheet" href="css/dark.css">
 
 	<!-- Font Icons -->
-	<link rel="stylesheet" href="../css/font-icons.css">
+	<link rel="stylesheet" href="css/font-icons.css">
 
-	<!-- Plugins/Components CSS -->
-	<link rel="stylesheet" href="../css/swiper.css">
-	<link rel="stylesheet" href="../css/components/bs-switches.css">
+	<!-- Animate Style -->
+	<link rel="stylesheet" href="css/animate.css">
 
-	<!-- Niche Demos -->
-	<link rel="stylesheet" href="../demos/gym/gym.css">
+	<!-- Magnific Popup Style -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="../css/custom-datoer.css">
+	<link rel="stylesheet" href="css/custom-datoer.css">
 
 <body class="stretched dark-bg">
 
@@ -70,13 +60,13 @@
 	<!-- Hero Section
     ============================================= -->
 	<section id="slider" class="slider-element slider-parallax min-vh-100 dark">
-		<div class="slider-inner" style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3)), url('assets/images/IMG_Portada.webp') top center no-repeat; background-size: cover;">
+		<div class="slider-inner" style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3)), url('images/IMG_Portada.webp') top center no-repeat; background-size: cover;">
 
 			<div class="vertical-middle">
 				<div class="container py-5 py-md-0">
 					<div class="row parallax" data-0-start="opacity:1; transform: translateY(0px);" data-0-end="opacity:0.1; transform: translateY(-30px);">
 						<div class="text-center">
-							<img src="assets/images/IMG_Datoer.webp" class="logo-img">
+							<img src="images/IMG_Datoer.webp" class="logo-img">
 						</div>
 					</div>
 				</div>
@@ -126,39 +116,15 @@
 						<h2 class="section-subtitle mb-1"><strong>Artista urbano-2001</strong></h2>
 						<p class="p-0">Merida, Yucatan.</p>
 					</div>
+				</div>
 
-					<!-- Portfolio Items
-============================================= -->
-					<div id="portfolio" class="portfolio row grid-container gutter-20" data-layout="fitRows">
-
-						<!-- Portfolio Item: Start -->
-						<article class="portfolio-item col-lg-6 col-md-6 col-sm-6 col-12">
-							<!-- Grid Inner: Start -->
-							<div class="grid-inner">
-								<!-- Image: Start -->
-								<div class="portfolio-image">
-									<img src="../datoer/assets/images/PHOTO-1.webp">
-								</div>
-								<!-- Image: End -->
-							</div>
-							<!-- Grid Inner: End -->
-						</article>
-						<!-- Portfolio Item: End -->
-
-						<!-- Portfolio Item: Start -->
-						<article class="portfolio-item col-lg-6 col-md-6 col-sm-6 col-12">
-							<!-- Grid Inner: Start -->
-							<div class="grid-inner">
-								<!-- Image: Start -->
-								<div class="portfolio-image">
-									<img src="../datoer/assets/images/PHOTO-2.webp">
-								</div>
-								<!-- Image: End -->
-							</div>
-							<!-- Grid Inner: End -->
-						</article>
-						<!-- Portfolio Item: End -->
-					</div>
+				<div class="masonry-thumbs grid-container grid-4" data-big="4" data-lightbox="gallery">
+					<a class="grid-item" href="images/PHOTO-1.webp" data-lightbox="gallery-item"><img src="images/PHOTO-1.webp" alt="Gallery Thumb 1"></a>
+					<a class="grid-item" href="images/PHOTO-2.webp" data-lightbox="gallery-item"><img src="images/PHOTO-2.webp" alt="Gallery Thumb 2"></a>
+					<a class="grid-item" href="images/PHOTO-1.webp" data-lightbox="gallery-item"><img src="images/PHOTO-1.webp" alt="Gallery Thumb 3"></a>
+					<a class="grid-item" href="images/PHOTO-2.webp" data-lightbox="gallery-item"><img src="images/PHOTO-2.webp" alt="Gallery Thumb 4"></a>
+					<a class="grid-item" href="images/PHOTO-1.webp" data-lightbox="gallery-item"><img src="images/PHOTO-1.webp" alt="Gallery Thumb 5"></a>
+					<a class="grid-item" href="images/PHOTO-2.webp" data-lightbox="gallery-item"><img src="images/PHOTO-2.webp" alt="Gallery Thumb 6"></a>
 				</div>
 			</div>
 			<!-- Datoer end -->
@@ -173,14 +139,11 @@
 					</h2>
 
 					<div class="container text-normal text-center pb-5">
-						<input type="checkbox" class="read-more-state" id="seccion-1" />
-						<div class="read-more-wrap">
+						<div data-readmore="true" data-readmore-size="13rem" data-readmore-maskcolor="#1A1A1A" data-readmore-masksize="100%" data-readmore-trigger-open="Ver más" data-readmore-trigger-close="Ver menos">
 							<p class="p-0">La galería arte 1010, en coordinación con el artista urbano Datoer y la Universidad Anáhuac suman esfuerzos para hacer una representación de arte urbano para transformar un espacio formal y contemporáneo en una verdadera expresión artística.</p>
-							<div class="read-more-target">
-								<p class="p-0">El objetivo del proyecto es poder resaltar el arte urbano, motivar el coleccionismo y la responsabilidad social. Creando una cadena de eventos únicos en su tipo que servirá coo base para generar especios que permitan tener eventos de calibre de ciudades como Nueva York, París y Londres, pero con residencia en la ciudad de Mérida, dejando un legado que perdure a través de distintas generaciones.</p>
-							</div>
+							<p class="p-0">El objetivo del proyecto es poder resaltar el arte urbano, motivar el coleccionismo y la responsabilidad social. Creando una cadena de eventos únicos en su tipo que servirá coo base para generar especios que permitan tener eventos de calibre de ciudades como Nueva York, París y Londres, pero con residencia en la ciudad de Mérida, dejando un legado que perdure a través de distintas generaciones.</p>
+							<a href="#" class="button button-flat rounded-pill my-0 button-more read-more-trigger read-more-trigger-center"></a>
 						</div>
-						<label for="seccion-1" class="button rounded-pill my-1 mx-0 button-more read-more-trigger"></label>
 					</div>
 				</div>
 			</div>
@@ -199,11 +162,11 @@
 						<div class="portfolio-item">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img class="img-fluid mb-2 rounded" src="assets/images/IMG_NFT_1.webp" alt="Image">
+									<img class="img-fluid mb-2 rounded" src="images/IMG_NFT_1.webp" alt="Image">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
-										<a href="assets/images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
+										<a href="images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="350"></div>
 								</div>
@@ -212,11 +175,11 @@
 						<div class="portfolio-item">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img class="img-fluid mb-2 rounded" src="assets/images/IMG_NFT_2.webp" alt="Image">
+									<img class="img-fluid mb-2 rounded" src="images/IMG_NFT_2.webp" alt="Image">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
-										<a href="assets/images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
+										<a href="images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="350"></div>
 								</div>
@@ -225,11 +188,11 @@
 						<div class="portfolio-item">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img class="img-fluid mb-2 rounded" src="assets/images/IMG_NFT_1.webp" alt="Image">
+									<img class="img-fluid mb-2 rounded" src="images/IMG_NFT_1.webp" alt="Image">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
-										<a href="assets/images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
+										<a href="images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="350"></div>
 								</div>
@@ -238,11 +201,11 @@
 						<div class="portfolio-item">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img class="img-fluid mb-2 rounded" src="assets/images/IMG_NFT_2.webp" alt="Image">
+									<img class="img-fluid mb-2 rounded" src="images/IMG_NFT_2.webp" alt="Image">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
-										<a href="assets/images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
+										<a href="images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="350"></div>
 								</div>
@@ -251,11 +214,11 @@
 						<div class="portfolio-item">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img class="img-fluid mb-2 rounded" src="assets/images/IMG_NFT_1.webp" alt="Image">
+									<img class="img-fluid mb-2 rounded" src="images/IMG_NFT_1.webp" alt="Image">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
-										<a href="assets/images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
+										<a href="images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="350"></div>
 								</div>
@@ -264,11 +227,11 @@
 						<div class="portfolio-item">
 							<div class="portfolio-image">
 								<a href="portfolio-single.html">
-									<img class="img-fluid mb-2 rounded" src="assets/images/IMG_NFT_2.webp" alt="Image">
+									<img class="img-fluid mb-2 rounded" src="images/IMG_NFT_2.webp" alt="Image">
 								</a>
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="350">
-										<a href="assets/images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
+										<a href="images/IMG_NFT_1.webp" class="overlay-trigger-icon bg-black text-white" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeInUpSmall" data-hover-speed="350" data-lightbox="image">+</a>
 									</div>
 									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="350"></div>
 								</div>
@@ -291,15 +254,13 @@
 					</h2>
 
 					<div class="container text-normal text-center pb-5">
-						<input type="checkbox" class="read-more-state" id="seccion-2" />
-						<div class="read-more-wrap">
+						<div data-readmore="true"  data-readmore-size="13rem" data-readmore-maskcolor="#1A1A1A" data-readmore-masksize="100%" data-readmore-trigger-open="Ver más" data-readmore-trigger-close="Ver menos">
 							<p class="p-0">Ubicada en el pasaje Picheta, en el centro de la ciudad de Mérida y con más de ocho años de experiencia en la comercialización y distribución de obras artísticas, la galería tuvo el placer de presentar la obra inédita que estuvo expuesta al público por 15 días.</p>
-							<div class="read-more-target">
 								<p class="p-0">El 14 de mayo de 2024 el artista Urbano Datoer inició la intervención con una variedad de técnicas, construyendo en cada una de sus paredes el concepto del inframundo a través de la voz de la calle. Nueve días después, el 22 de mayo la galería abrió sus puertas para la presentación de la obra.</p>
 								<p class="p-0">La obra busca ser única en su tipo y con el fin de manifestar el inframundo a través de la voz de la calle y la expresión artística de Datoer, sólo estuvo disponible hasta el 30 de mayo. Con el fin de hacer palpable lo efímero y trascender a la manifestación artística, las paredes fueron borradas para dejar un legado exclusivo al grabado en el recuerdo de los visitantes, y a una colección limitada de piezas que estarán disponibles de manera exclusiva para coleccionistas y amantes del arte.</p>
-							</div>
+							<a href="#" class="button button-flat rounded-pill my-0 button-more read-more-trigger read-more-trigger-center"></a>
 						</div>
-						<label for="seccion-2" class="button rounded-pill my-1 mx-0 button-more read-more-trigger"></label>
+
 					</div>
 				</div>
 			</div>
@@ -319,7 +280,7 @@
 						<div class="grid-inner row g-0">
 							<div class="col-md-2">
 								<div class="entry-image">
-									<a href="" data-lightbox="image"><img src="assets/images/IMG_NFT_2.png" alt=""></a>
+									<a href="" data-lightbox="image"><img src="images/IMG_NFT_2.png" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-10 ps-md-4">
@@ -338,7 +299,7 @@
 						<div class="grid-inner row g-0">
 							<div class="col-md-2">
 								<div class="entry-image">
-									<a href="" data-lightbox="image"><img src="assets/images/IMG_NFT_1.png" alt=""></a>
+									<a href="" data-lightbox="image"><img src="images/IMG_NFT_1.png" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-10 ps-md-4">
@@ -365,65 +326,6 @@
 	<footer id="footer" class="border-0" style="background-color:red; background-size: cover;">
 
 		<div class="container">
-
-			<!-- Footer Widgets
-            ============================================= -->
-			<!--
-            <div class="footer-widgets-wrap">
-
-                <div class="row widget">
-
-                    <div class="text-start col-sm-4">
-                        <h4 style="font-size: 22px;">Book your Free Trial</h4>
-                        <form action="#" class="row mb-1" style="max-width: 300px;">
-                            <div class="col-12 form-group">
-                                <label for="template-footer-form-email" class="text-capitalize fw-semibold">Username or Email</label>
-                                <input type="email" id="template-footer-form-email" name="template-footer-form-email" value="" class="form-control not-dark">
-                            </div>
-                            <div class="col-12 form-group">
-                                <label for="template-footer-form-password" class="text-capitalize fw-semibold">Choose Password</label>
-                                <input type="password" id="template-footer-form-password" name="template-footer-form-password" value="" class="form-control not-dark">
-                            </div>
-                            <div class="col-12 form-group mb-0">
-                                <button type="submit" class="fw-normal text-capitalize button button-border button-dark button-circle m-0" value="submit">Register Now</button>
-                            </div>
-                        </form>
-                        <p class="mb-0"><small class="fw-light"><em>* We keep your information private</em></small></p>
-                    </div>
-
-                    <div class="text-start col-sm-4">
-                        <h4 style="font-size: 22px;">Location:</h4>
-                        <address>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                        </address>
-                        <abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-                        <abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-                        <abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com<br>
-
-                        <div class="d-flex mt-4">
-                            <a href="#" class="social-icon si-small rounded-circle text-white bg-facebook mb-0">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small rounded-circle text-white bg-x-twitter mb-0">
-                                <i class="fa-brands fa-x-twitter"></i>
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small rounded-circle text-white bg-instagram mb-0">
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small rounded-circle text-white bg-github mb-0">
-                                <i class="fa-brands fa-github2"></i>
-                                <i class="fa-brands fa-github2"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            -->
 		</div>
 
 		<!-- Copyrights
@@ -455,11 +357,12 @@
 
 <!-- JavaScripts
 ============================================= -->
-<script src="../js/plugins.min.js"></script>
-<script src="../js/functions.bundle.js"></script>
-<!-- Image Change JS -->
-<script src="../js/components/event.move.js"></script>
-<script src="../js/components/image-changer.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/plugins.min.js"></script>
+
+<!-- Footer Scripts
+============================================= -->
+<script src="js/functions.js"></script>
 
 </body>
 </html>
